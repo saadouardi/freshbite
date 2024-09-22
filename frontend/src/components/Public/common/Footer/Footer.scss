@@ -1,0 +1,210 @@
+footer{
+    background-color: #0A071A;
+    color: var(--footer--Color-LM);
+    .Menus_List{
+        background-color: #141124;
+        padding: 10px 50px;
+        .Menus{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px 100px;
+            .Menu{
+                display: flex;
+                align-items: start;
+                flex-direction: column;
+                gap: 0 10px;
+                h5{
+                    font-size: 20px;
+                    color: gold;
+                }
+                ul {
+                    display: flex;
+                    align-items: start;
+                    justify-content: start;
+                    flex-direction: column;
+                    gap: 8px;
+                    li{
+                        transition: all 0.3s linear;
+                        a{
+                            color: white;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 5px;
+                            font-size: 16px;
+                            svg{
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                        a:hover{
+                            color: gold;
+                        }
+                    }
+                    li:hover{
+                        //transform: scale(0.99);
+                    }
+                }
+            }
+        }
+    }
+    .Copyright_SocialMedia{
+        background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 50px;
+        .Copyright{
+            height: fit-content;
+            width: 100%;
+            padding: 20px 0;
+            p{
+                color: black;
+                font-size: 15px;
+            }
+        }
+        .SocialMedia{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            a{
+                img{
+                    height: 40px;
+                    width: 40px;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                }
+                img:hover{
+                    transform: translateY(-0.5rem);
+                }
+            }
+        }
+    }
+}
+.company_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    img{
+        border-radius: 9px;
+        width: 60px;
+        height: 60px;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+}
+.Newsletter{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    h1{
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .newsletter__div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    
+        input{
+            height: 50px;
+            width: 250px;
+            background-color: rgb(213, 213, 213);
+            color: black;
+            border: none;
+            border-radius: 4px;
+            padding-left: 5px;
+        }
+    
+        input:hover{
+            background-color: rgb(255, 255, 255);
+        }
+    
+        input::placeholder{
+            color: grey;
+        
+        }
+        
+        button{
+            height: 50px;
+            background-color: rgb(246, 201, 0);
+            color: black;
+            border: none;
+            border-radius: 4px;
+            transition: all 0.3s ease-in-out;
+        }
+    
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+    
+        input:focus,
+        input:active{
+            outline: none;
+        }
+    }
+}
+.Download-Store {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    img{
+        height: 50px;
+        width: 100px;
+        border: 2px black solid;
+        cursor: pointer;
+    }
+}
+.reach_us__div{
+    background-color: #00284c;
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .contact{
+        width: 150px;
+        height: fit-content;
+        background-color: rgb(0, 128, 255);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 5px;
+        border-radius: 9px;
+        cursor: pointer;
+        transition: all 0.5s linear;
+        h2{
+            font-size: 12px;
+        }
+        
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+    }
+    .contact:hover{
+        background-color: gold;
+        color: black;
+    }
+
+}

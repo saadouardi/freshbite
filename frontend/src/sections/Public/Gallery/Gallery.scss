@@ -1,0 +1,47 @@
+.Main-Gallery{
+    width: 1440px;    
+    .Gallery{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        .Gallery-Content{
+            position: relative;
+            img{
+                width: 350px;
+                height: 300px;
+                border-radius: 0;
+                transition: all 0.3s linear;
+            }
+    
+            h1{
+                display: none;
+                color: white;
+                text-shadow: 2px 2px 5px rgb(0, 0, 0);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+            h1:hover{
+                color: gold;
+            }
+    
+    
+        }
+        .Gallery-Content:is(:hover){
+            h1{
+                display: block;
+            }
+        }
+    }
+}
+
+.Gallery:hover{
+    img:is(:hover){
+        filter:blur(3px);
+    }
+    img:not(:hover){
+        filter:blur(1px);
+    }
+}

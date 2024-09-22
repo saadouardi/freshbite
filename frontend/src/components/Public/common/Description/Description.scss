@@ -1,0 +1,11 @@
+.Description{
+    width: 800px;
+    p{
+        font-size: var( --secondary--font-size);
+        font-family: var(--secondary--font-family);
+        font-weight: var(--secondary--font-weight);
+        color: black;
+        text-shadow: 2px 2px 5px orange;
+        text-align: center;
+    }
+}

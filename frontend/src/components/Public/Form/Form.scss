@@ -1,0 +1,55 @@
+.Form{
+    form{
+        .input__container{
+            position: relative;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg{
+                height: 25px;
+                width: 25px;
+                position: absolute;
+                left: 30px;
+                top: 50%;
+                transform: translate(-50%,-50%);
+            }
+        
+            svg:hover{
+                color: white;
+            }
+        }
+
+        input{
+            width: 500px;
+        }
+        input[type="submit"]{
+            background-color: rgb(0, 115, 255);
+            padding-left: 0;
+            width: calc(100% + 50px);
+            cursor: pointer;
+        }
+        
+        input[type="date"]::-webkit-calendar-picker-indicator{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 30px;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            filter: invert(100%);
+            cursor: pointer;
+        }
+
+        input[type="time"]::-webkit-calendar-picker-indicator{
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            filter: invert(100%);
+            cursor: pointer;
+        }
+    }
+}

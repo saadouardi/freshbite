@@ -1,0 +1,64 @@
+.Menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .Menu-Container{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .Menu-Search-List{
+            width: 1100px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .Menu__SearchResults{
+                width: 100%;
+                height: fit-content;
+                background-color: white;
+            }
+            
+            .Menu__List{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-between;
+                gap: 15px;
+                .Dish{
+                    background: white;
+                    .Body{
+                        h1{
+                            color: black;
+                            text-shadow: none;
+                            text-align: center;
+                        }
+                        p{
+                            color: grey;
+                            text-shadow: none;
+                        }
+                    }
+
+                    .Footer{
+                        .Quantity{
+                            background-color: black;
+                            svg{
+                                color: white;
+                            }
+                            span{
+                                color: white;
+                            }
+                        }
+
+                        .Icon-Bg{
+                            svg{
+                                color: white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

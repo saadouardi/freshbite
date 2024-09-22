@@ -1,0 +1,26 @@
+.Filter{
+    height: fit-content !important;
+
+    .Search{
+        .Input-Search{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+            .Input__Container{
+                width: 95%;
+                input{
+                    width: 100%;
+                    background-color: white;
+                    color: black;
+                    padding: 0 8px;
+                    border-radius: 0;
+                    border-bottom: 2px solid black;
+                }
+            }   
+
+        }
+    }
+}
+
+

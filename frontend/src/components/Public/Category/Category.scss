@@ -1,0 +1,45 @@
+.Category{
+    cursor: pointer;
+    .Category-Container{
+        width: 460px;
+        background:linear-gradient(194deg, rgba(255,255,255,1) 1%, rgba(255,152,0,1) 79%);
+        box-shadow: 1px 1px 10px rgb(122, 122, 122);
+        border-radius: 9px;
+        .Image-Container{
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                height: 220px;
+                width: 220px;
+                transition: all 0.4s linear;
+            }
+        }
+        .Text-Container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            border-radius: 0 0 9px 9px;
+            p{
+                font-size: 30px;
+                color: black;
+            }
+        }
+    }
+}
+
+.Category:hover{
+    .Category-Container{
+        .Image-Container{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .Text-Container{
+            p{
+            }
+        }
+    }
+}
