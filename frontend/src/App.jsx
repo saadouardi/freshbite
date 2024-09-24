@@ -15,16 +15,16 @@ function App() {
     <>
           <Router>
               <Switch>
-                <Route path="/" exact component={Home}/>
-                <Route path="/about" exact component={About}/>
-                <Route path="/menu" exact component={ProductList}/>
-                <Route path="/menu/product" exact component={ProductDetails}/>
-                <Route path="/wishlist" exact component={Wishlist}/>
-                <Route path="/cart" exact component={Cart}/>
-                <Route path="/checkout" exact component={Checkout}/>
-                <Route path="/chefs" exact component={ChefsPage}/>
-                <Route path="/gallery" exact component={GalleryPage}/>
-                <Route path="/contact" exact component={Contact}/>
+                <Route path="/freshbite" exact component={Home}/>
+                <Route path="/freshbite/about" exact component={About}/>
+                <Route path="/freshbite/menu" exact component={ProductList}/>
+                <Route path="/freshbite/menu/product" exact component={ProductDetails}/>
+                <Route path="/freshbite/wishlist" exact component={Wishlist}/>
+                <Route path="/freshbite/cart" exact component={Cart}/>
+                <Route path="/freshbite/checkout" exact component={Checkout}/>
+                <Route path="/freshbite/chefs" exact component={ChefsPage}/>
+                <Route path="/freshbite/gallery" exact component={GalleryPage}/>
+                <Route path="/freshbite/contact" exact component={Contact}/>
               </Switch>
           </Router>
     </>
