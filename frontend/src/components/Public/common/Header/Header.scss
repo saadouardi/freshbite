@@ -32,13 +32,10 @@ header{
         }
     }
     .Auth-Icons{
-        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 15px;
-    }
-    .Auth-Icons{
         .Icon-Bg{
             background-color: rgb(42, 163, 255);
             border-radius: 100px;
@@ -60,6 +57,9 @@ header{
                 width: 30px;
             }
         }
+    }
+    .MoreMenu{
+        display: none;
     }
 }
 .Restaurant{
@@ -95,4 +95,44 @@ header{
     h1{
         color: white;
     }
+}
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    header{
+        .Navbar,
+        .Auth-Icons{
+            display: none;
+        }
+        .MoreMenu{
+            display: block;
+        }
+    }
+}
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+    header{
+        .Navbar,
+        .Auth-Icons{
+            display: none;
+        }
+        .MoreMenu{
+            display: block;
+        }
+    }
+}
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+        header{
+        .Navbar,
+        .Auth-Icons{
+            display: none;
+        }
+        .MoreMenu{
+            display: block;
+        }
+    }
+}
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+
 }

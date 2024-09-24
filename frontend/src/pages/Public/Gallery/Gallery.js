@@ -4,7 +4,7 @@ import { PageSection } from '../../../components/Public/common/PageSection/PageS
 import { Gallery } from '../../../sections/Public/Gallery/Gallery';
 import './Gallery.scss';
 
-export const GalleryPage = () => {
+const GalleryPage = () => {
     return (
         <>
             <Header/>
@@ -15,4 +15,4 @@ export const GalleryPage = () => {
         </>
     )
 }
-
+export default GalleryPage;

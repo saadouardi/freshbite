@@ -6,7 +6,6 @@
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-
         .Menu-Search-List{
             width: 1100px;
             display: flex;
@@ -17,7 +16,6 @@
                 height: fit-content;
                 background-color: white;
             }
-            
             .Menu__List{
                 width: 100%;
                 display: flex;
@@ -38,7 +36,6 @@
                             text-shadow: none;
                         }
                     }
-
                     .Footer{
                         .Quantity{
                             background-color: black;
@@ -49,7 +46,6 @@
                                 color: white;
                             }
                         }
-
                         .Icon-Bg{
                             svg{
                                 color: white;
@@ -60,5 +56,4 @@
             }
         }
     }
-
 }

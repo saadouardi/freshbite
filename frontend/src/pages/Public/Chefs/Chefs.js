@@ -3,7 +3,7 @@ import { Header } from '../../../components/Public/common/Header/Header';
 import { Chefs } from '../../../sections/Public/Chefs/Chefs';
 import './Chefs.scss';
 
-export const ChefsPage = () => {
+const ChefsPage = () => {
     return (
         <>
             <Header/>
@@ -13,3 +13,4 @@ export const ChefsPage = () => {
         </>
     )
 }
+export default ChefsPage;

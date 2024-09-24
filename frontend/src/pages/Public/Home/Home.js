@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header } from '../../../components/Public/common/Header/Header';
 import { Footer } from '../../../components/Public/common/Footer/Footer';
-import { Dishes } from '../../../sections/Public/Dishes/Dishes';
+import { Products } from '../../../sections/Public/Shop/Products/Products';
 import { Categories } from '../../../sections/Public/Categories/Categories';
 import { Stats } from '../../../sections/Public/Stats/Stats';
 import { Chefs } from '../../../sections/Public/Chefs/Chefs';
@@ -10,12 +10,12 @@ import { Blogs } from '../../../sections/Public/Blogs/Blogs';
 import { Gallery } from '../../../sections/Public/Gallery/Gallery';
 import { Book } from '../../../sections/Public/Book/Book';
 
-export const Home = () => {
+const Home = () => {
     return (
         <>
             <Header/>
             <main>
-                <Dishes/>
+                <Products/>
                 <Categories/>
                 <Stats/>
                 <SpecialDeals/>
@@ -28,4 +28,5 @@ export const Home = () => {
         </>
     )
 }
+export default Home;
 

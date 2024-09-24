@@ -341,20 +341,9 @@ svg:hover{
     background-size: cover;
     background-position: center center;
 }
-.MoreMenu{
-    display: none;
-}
+
 /* MOBILE VERSION */
 @media screen and (max-width :995px) {
-    header{
-        .Navbar,
-        .Auth-Icons{
-            display: none;
-        }
-        .MoreMenu{
-            display: block;
-        }
-    }
     .slider__data,
     .slider__content{
         display: flex;
@@ -363,6 +352,3 @@ svg:hover{
         text-align: center;
     }
 }
-/* .MoreMenu{
-    display: none;
-} */

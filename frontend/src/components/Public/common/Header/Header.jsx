@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../../../assets/images/logo/restaurant-logo.png';
+import { Logo } from '../Logo/Logo';
 
 import './Header.scss';
 
@@ -7,13 +7,7 @@ export const Header = () => {
     return (
         <header>
             <div className="header">
-                <div className="Restaurant">
-                    <img src={Logo} alt='' class="restaurant__img"/>
-                    <div class="restaurant__name_container">
-                        <h1 class="restaurant__name">FRESHFOOD</h1>
-                        <p class="restaurant__type">RESTAURANT</p>
-                    </div>
-                </div>
+                <Logo/>
                 <div className="Navbar">
                     {/* <!-- HOME --> */}
                     <a href="/" class="active">HOME</a>

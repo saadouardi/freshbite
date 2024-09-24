@@ -3,7 +3,7 @@ import { Header } from '../../../components/Public/common/Header/Header';
 import { PageSection } from '../../../components/Public/common/PageSection/PageSection';
 import './Contact.scss';
 
-export const Contact = () => {
+const Contact = () => {
     return (
         <>
             <Header/>
@@ -44,4 +44,4 @@ export const Contact = () => {
         </>
     )
 }
-
+export default Contact;

@@ -2,7 +2,7 @@ import React from 'react';
 import { Header } from '../../../components/Public/common/Header/Header';
 import './About.scss';
 
-export const About = () => {
+const About = () => {
   return (
     <>
         <Header />
@@ -13,4 +13,4 @@ export const About = () => {
     </>
   )
 }
-
+export default About;

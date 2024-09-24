@@ -10,7 +10,7 @@ import Dessert from '../../../../assets/images/menu/Desserts/Dessert.jpg';
 import Drink from '../../../../assets/images/menu/Drinks/CocaColaClassic.jpg';
 import './Navbar.scss';
 
-export const Navbar = () => {
+export const ProductFilterBy = () => {
     return (
         <>
             <div className='Menu-Navbar'>
