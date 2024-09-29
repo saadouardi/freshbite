@@ -1,4 +1,4 @@
-.Dish{
+.Product{
     background:linear-gradient(194deg, rgba(255,255,255,1) 1%, rgb(248, 248, 248) 79%);
     box-shadow: 1px 1px 10px rgb(122, 122, 122);
     height:fit-content;
@@ -11,6 +11,11 @@
     cursor: pointer;
     border-radius: 9px;
     transition: all 0.4s linear;
+    .Cart-Icon{
+        button{
+            display: none;
+        }
+    }
     .Header{
         width: 100%;
         height: 250px;
@@ -31,10 +36,10 @@
         }
         .Image-Container:hover{
             img{
-                transform: scale(1.1);
+                transform: scale(1.1) rotate(5deg);
+
             }
         }
-
     }   
     .Body{
         width: 100%;
@@ -56,60 +61,22 @@
             }
         }
     }
-
     .Footer{
         width: 100%;
-        div.Dish-Qunatity-Price{
+        .Price-Cart{
             display: flex;
             align-items: center;
-            justify-content: space-between;
-
-            .Quantity-Wrap{
-                .Quantity{
-                    height: 30px;
-                    background-color: rgb(220, 220, 220);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-                    padding: 5px;
-                    border-radius: 4px;
-                    svg{
-                        height: 20px;
-                        width: 20px;
-                        color: black;
-                    }
-                    span{
-                        color: black;
-                    }
-                }
-            }
-
-            .Price-Cart{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 8px;
-                .Icon-Bg{
-                    background-color: rgb(255, 215, 141);
-                    border: 1px solid rgb(222, 170, 0);
-                    svg{
-                        color: orange;
-                    }
-                }
-        
-                h5{
-                    color: black;
-                    text-shadow: 1px 1px 2px white;
-                    font-size: 25px;
-                }
+            justify-content: center;
+            gap: 8px;
+            h5{
+                color: black;
+                text-shadow: 1px 1px 2px white;
+                font-size: 25px;
             }
         }
     }
-
 }
-
-.Dish:hover{
+.Product:hover{
     box-shadow: 2px 2px 10px rgb(121, 121, 121);
 }
 

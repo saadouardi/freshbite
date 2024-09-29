@@ -1,9 +1,7 @@
-.Restaurant{
-    width: fit-content;
-    height: fit-content;
+.Logo{
     display: flex;
-    align-items: start;
-    justify-content: start;
+    align-items: center;
+    justify-content: center;
     padding: 2px;
     gap: 5px;
     cursor: pointer;    
@@ -11,24 +9,13 @@
         height: 60px;
         width: 60px;
     }
-    div.restaurant__name_container{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-    }
-    h1.restaurant__name{
+    h1{
         font-size: 30px;
-        color: white;
-    }
-    
-    p.restaurant__type{
-        color: orange;
-        font-size: 15px;
+        color: var(--color);
     }
 }
-.Restaurant:hover{
+.Logo:hover{
     h1{
-        color: white;
+        color: var(--color);
     }
 }

@@ -1,0 +1,115 @@
+main.ProductDetails{
+    .Main-ProductDetails{
+        gap: 50px;
+        position: relative;
+        button.BackBtn{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 9999;
+        }
+        .Product-Image,
+        .Product-Details{
+            width: 550px;
+            height: 550px;
+        }
+        .Product-Image{
+            box-shadow: 2px 2px 10px rgb(142, 142, 142);
+            overflow: hidden;
+            border-radius: 16px;
+            img{
+                height: 90%;
+                width: 90%;
+                transition: all 0.3s linear;
+            }
+        }
+        .Product-Image:hover{
+            img{
+                transform: scale(1.1);
+            }
+        }
+        .Product-Details{
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 20px;
+            .Product-Data{
+                display: flex;
+                gap: 10px;
+            }
+            .Product-Name{
+                h1{
+                    font-size: 35px;
+                }
+            }
+            .ProductPrice-ProductReviews{
+                justify-content: space-between !important;
+            }
+            .Product-Status{
+                p{
+                    color: orange;
+                }
+            }
+            .Product-Description{
+                p{
+                    color: rgb(185, 185, 185);
+                }
+            }
+            .Product-Badges{
+                p{
+                    strong{
+                        color: orange;
+                    }
+                }
+            }
+            .Product-ActionBtns{
+                button{
+                    border-radius: 9px;
+                    background-color: rgb(70, 70, 70);
+                    color: white;
+                    height: 50px;
+                    width: 100%;
+                    font-size: 18px;
+                }
+                button:hover{
+                    background-color: rgb(99, 99, 99);
+                }
+                button.BuyNow{
+                    background-color: rgb(220, 220, 220);
+                    color: black;
+                }
+                button.BuyNow:hover{
+                    background-color: white;
+                }
+            }
+        }
+    }
+    .Main-ProductReviews{
+        padding: 20px;
+        align-items: start !important;
+        gap: 20px;
+        .ProductReview{
+            gap: 15px;
+            .User-Profile{
+                img{
+                    height: 60px;
+                    width: 60px;
+                }
+            }
+            .UserName-ReviewStars{
+                p{
+                }
+                .Stars{
+                    svg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                }
+                .User-Review{
+
+                }
+            }
+        }
+    }
+}

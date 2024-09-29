@@ -21,8 +21,8 @@ const Home = () => {
                 <SpecialDeals/>
                 <Chefs/>
                 <Blogs/>
-                <Gallery/>
-                <Book/>
+                {/* <Gallery/> */}
+                {/* <Book/> */}
             </main>
             <Footer/>
         </>

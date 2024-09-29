@@ -1,8 +1,8 @@
 .Category{
     cursor: pointer;
     .Category-Container{
-        width: 460px;
-        background:linear-gradient(194deg, rgba(255,255,255,1) 1%, rgba(255,152,0,1) 79%);
+        width: 340px;
+        background:linear-gradient(194deg, rgba(255,255,255,1) 1%, rgb(5, 143, 14) 79%);
         box-shadow: 1px 1px 10px rgb(122, 122, 122);
         border-radius: 9px;
         .Image-Container{
@@ -11,7 +11,7 @@
             align-items: center;
             justify-content: center;
             img{
-                height: 220px;
+                height: 200px;
                 width: 220px;
                 transition: all 0.4s linear;
             }

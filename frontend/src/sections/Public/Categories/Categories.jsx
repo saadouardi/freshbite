@@ -15,13 +15,19 @@ export const Categories = () => {
         <section>
                 <Title Image='' Span='Our' Text='Delicious Categories'/>
             <div>
-                <div className='Flex-Center'>
-                    <Category Image={Beef} Text='Burgers'/>
-                    <Category Image={ChickenWings} Text='Chicken Wings'/>
-                    <Category Image={Pasta} Text='Pasta'/>
-                    <Category Image={Pizza} Text='Pizzas'/>
-                    <Category Image={Sandwish} Text='Sandwish'/>
-                    <Category Image={Salads} Text='Salads'/>
+                <div className='Flex-Center Flex-Column'>
+                    <div className='Flex-Center'>
+                        <Category Image={Beef} Text='Burgers'/>
+                        <Category Image={ChickenWings} Text='Chicken Wings'/>
+                        <Category Image={Pasta} Text='Pasta'/>
+                        <Category Image={Pizza} Text='Pizzas'/>
+                    </div>
+                    <div className='Flex-Center'>
+                        <Category Image={Sandwish} Text='Sandwish'/>
+                        <Category Image={Salads} Text='Salads'/>
+                        <Category Image={Beef} Text='Burgers'/>
+                        <Category Image={ChickenWings} Text='Chicken Wings'/>
+                    </div>
                 </div>
             </div>
         </section>

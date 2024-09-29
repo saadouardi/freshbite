@@ -10,7 +10,7 @@ import './SpecialDeals.scss';
 export const SpecialDeals = () => {
     return (
         <section>
-            <Title Image='' Span='Our' Text='Delicious Categories'/>
+            <Title Image='' Span='Our' Text='Special Deals'/>
             <div>
                 <div className="Flex-Center">
                     <Product Image={Dish1} Name='Beef Burger' Description='Cheese Burger' Currency='$' Price='4.99'/>

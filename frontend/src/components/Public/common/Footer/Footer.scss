@@ -1,8 +1,7 @@
 footer{
-    background-color: #0A071A;
-    color: var(--footer--Color-LM);
+    background-color: var(--footer-bgColor-bm);
+    color: var(--color-bm);
     .Menus_List{
-        background-color: #141124;
         padding: 10px 50px;
         .Menus{
             display: flex;
@@ -14,10 +13,10 @@ footer{
                 display: flex;
                 align-items: start;
                 flex-direction: column;
-                gap: 0 10px;
+                gap: 10px;
                 h5{
-                    font-size: 20px;
-                    color: gold;
+                    font-size: 25px;
+                    color: var(--bgColor);
                 }
                 ul {
                     display: flex;
@@ -32,8 +31,8 @@ footer{
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            gap: 5px;
-                            font-size: 16px;
+                            gap: 10px;
+                            font-size: 18px;
                             svg{
                                 width: 20px;
                                 height: 20px;
@@ -41,6 +40,9 @@ footer{
                         }
                         a:hover{
                             color: gold;
+                            svg, span{
+                                color: gold;
+                            }
                         }
                     }
                     li:hover{
@@ -50,36 +52,30 @@ footer{
             }
         }
     }
-    .Copyright_SocialMedia{
-        background-color: #ffffff;
+    .Copyright{
+        background-color: var(--bgColor-bm);
+        color: var(--color-bm);
+        height: fit-content;
+        width: 100%;
+        padding: 20px 0;
+        p{
+            font-size: 15px;
+        }
+    }
+    .SocialMedia{
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding: 5px 50px;
-        .Copyright{
-            height: fit-content;
-            width: 100%;
-            padding: 20px 0;
-            p{
-                color: black;
-                font-size: 15px;
+        justify-content: center;
+        gap: 8px;
+        a{
+            img{
+                height: 40px;
+                width: 40px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
             }
-        }
-        .SocialMedia{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            a{
-                img{
-                    height: 40px;
-                    width: 40px;
-                    cursor: pointer;
-                    transition: all 0.3s ease-in-out;
-                }
-                img:hover{
-                    transform: translateY(-0.5rem);
-                }
+            img:hover{
+                transform: translateY(-0.5rem);
             }
         }
     }

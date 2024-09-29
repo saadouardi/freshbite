@@ -4,10 +4,9 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
-
     form{
         width: 600px;
-        background-color: rgb(168, 168, 168);
+        background-color: orange;
         color: white;
         box-shadow: .5px .5px 15px rgb(8, 8, 8);
         padding: 15px;
@@ -15,11 +14,10 @@
         flex-direction: column;
         gap: 8px;
         border-radius: 9px;
-        .Form__Header{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        .Header{
+            h1, h3{
+                color: white;
+            }
         }
         .Form__Body{
             width: 100%;
@@ -42,7 +40,7 @@
             }
         }
         input ,textarea{
-            color: white;
+            color: black;
             background-color: rgba(101, 100, 100, 0.493);
             width: 100%;
             border-radius: 4px;
@@ -56,7 +54,7 @@
         }
         input::placeholder,
         textarea::placeholder{
-            color: white;
+            color: black;
             font-size: 15px;
             font-family: var(--font-secondary);
             padding-left: 2px;
@@ -67,6 +65,7 @@
         }
         input[type='submit']{
             width: 150px;
+            color: white;
             background-color: rgb(0, 94, 255);
             cursor: pointer;
         }

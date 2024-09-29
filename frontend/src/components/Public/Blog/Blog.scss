@@ -1,69 +1,46 @@
 .Blog{
-    .Blog-Container{
+    .Blog-Content{
+        align-items: start;
+        justify-content: start !important;
+        gap: 0 !important;
         width: 450px;
-        height: 480px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
+        height: fit-content;
+        border-radius: 16px;
         cursor: pointer;
-        .Image-Container{
+        .Image{
             width: 100%;
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            .Image{
-                overflow: hidden;
-                border-radius: 9px;
-                img{
-                    width: 100%;
-                    height: 280px;
-                    transition: all 0.3s linear;
-                }
+            height: 280px;
+            overflow: hidden;
+            border-radius: 9px 9px 0 0;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 9px 9px 0 0;
+                transform: rotateY(10deg);
+                transition: all 0.3s linear;
             }
-
-            // .Image:hover{
-            //     img{
-            //         transform: scale(1.1);
-            //     }
-            // }
+        }
         }
         .Blog-User-Container{
-            position: absolute;
-            top: 90%;
-            width: 400px;
-            background-color: rgb(231, 231, 231);
-            border: 2px solid rgb(103, 103, 103);
+            width: 100%;
+            background-color: var(--secondary-bgColor-bm);
             color: black;
-            border-radius: 9px;
+            border-radius:0 0 9px 9px;
             display: flex;
             flex-direction: column;
             align-items: start;
             justify-content: center;
-            padding: 10px;
             gap: 5px;
-            .Blog-Type{
-                p{
-                    color: rgb(255, 162, 0);
+            div{
+                padding: 4px 10px;
+            }
+            .Blog-Title{
+                h1{
+                    color: black;
                 }
             }
-
-            .Blog-Data{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 10px;
-                li{
-                    color: rgb(255, 162, 0);
-                }
-            }
-
-            .User-Data-ReadMore{
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            span, p, svg{
+                color: black;
             }
             .User-Data{
                 display: flex;
@@ -78,29 +55,26 @@
                 }
             }
             button{
-                background-color: rgb(255, 162, 0);
-                height: fit-content;
-                width: fit-content;
+                background-color: var(--bgColor);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
                 padding: 5px 30px;
                 .Icon-Bg{
+                    padding: 5px;
                     border-radius: 100px;
-                    background-color: white;
+                    background-color: white !important;
                     svg{
                         height: 20px;
                         width: 20px;
-                        color: orange;
+                        color: black !important;
                     }
-
                 }
             }
         }
-    }
+    
 }
-
 .Blog:hover{
     .Image{
         img{

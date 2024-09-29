@@ -1,105 +1,68 @@
 header{
-    height: fit-content;
-    width: 100%;
-    background-color: #141124;
-    color: #F5B70A;
     position: sticky;
     top: 0;
-    z-index: 200;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .header{
-        width: 1400px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .Navbar{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        flex-wrap: wrap;
-        font-family: var(--primary--font-family);
-        font-weight: var(--primary--font-weight);
-        a{
-            text-decoration: none;
-            padding: 5px 10px;
-            color: white;
-        }
-        a:hover{
-            color:gold;
+    z-index: 9999;
+    .TopBar{
+        background-color: var(--bgColor);
+        padding: 10px 20px;
+        ul{
+            li{
+                a:hover{
+                    svg, p{
+                        color: var(--HoverbgColor-bm);
+                    }
+                }
+            }
+            li::after{
+                content: '|';
+            }
+            li:last-child::after{
+                content: '';
+            }
         }
     }
-    .Auth-Icons{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-        .Icon-Bg{
-            background-color: rgb(42, 163, 255);
-            border-radius: 100px;
-            padding: 8px;
-            position: relative;
-            button{
-                background-color: red;
-                height: fit-content;
-                width: fit-content;
-                padding: 2px 10px;
-                position: absolute;
-                top: -8px;
-                right: -8px;
+    .Main-Header{
+        background-color: var(--header-bgColor-bm);
+        color: var(--header-color-bm);
+        padding: 10px 20px;
+        box-shadow: .1px .1px 40px black;
+        .Auth-Icons{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            .Icon-Bg{
                 border-radius: 100px;
-            }
-            svg{
-                color: white;
-                height: 30px;
-                width: 30px;
+                padding: 8px;
+                position: relative;
+                button{
+                    background-color: red;
+                    height: fit-content;
+                    width: fit-content;
+                    padding: 2px 10px;
+                    position: absolute;
+                    top: -8px;
+                    right: -8px;
+                    border-radius: 100px;
+                }
+                svg{
+                    color: white;
+                    height: 30px;
+                    width: 30px;
+                }
             }
         }
-    }
-    .MoreMenu{
-        display: none;
-    }
-}
-.Restaurant{
-    width: fit-content;
-    height: fit-content;
-    display: flex;
-    align-items: start;
-    justify-content: start;
-    padding: 2px;
-    gap: 5px;
-    cursor: pointer;    
-    img{
-        height: 60px;
-        width: 60px;
-    }
-    div.restaurant__name_container{
-        display: flex;
-        align-items: start;
-        justify-content: center;
-        flex-direction: column;
-    }
-    h1.restaurant__name{
-        font-size: 30px;
-        color: white;
-    }
-    
-    p.restaurant__type{
-        color: orange;
-        font-size: 15px;
-    }
-}
-.Restaurant:hover{
-    h1{
-        color: white;
+        .MoreMenu{
+            display: none;
+            padding: 10px;
+        }
     }
 }
 /*---------------------- MOBILE VERSION----------------------*/
 @media screen and (max-width: 768px){
     header{
-        .Navbar,
+        .TopBar, 
+        .Navbar, 
         .Auth-Icons{
             display: none;
         }
@@ -111,9 +74,10 @@ header{
 /* ----------- TABLET DEVICES----------- */
 @media only screen and (max-width: 768px ) and (max-width:1023px){
     header{
-        .Navbar,
+        .TopBar, 
+        .Navbar, 
         .Auth-Icons{
-            display: none;
+            display: none !important;
         }
         .MoreMenu{
             display: block;
@@ -122,10 +86,11 @@ header{
 }
 /* ----------- LAPTOP DEVICES----------- */
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
-        header{
-        .Navbar,
+    header{
+        .TopBar,
+        .Navbar, 
         .Auth-Icons{
-            display: none;
+            display: none !important;
         }
         .MoreMenu{
             display: block;

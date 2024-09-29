@@ -17,27 +17,25 @@ export const Blogs = () => {
                 <div className='Flex-Center'>
                     <Blog 
                         Image={Blog1}
-                        Blog='Hot dog dressed in mustard, accompanied by a side of ketchup' 
+                        Blog='Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod...' 
                         Date='November 10, 2024' 
                         Views='560' 
                         Comments='2' 
                         Profile={Profile1} 
                         Name='Emily'
                     />
-
                     <Blog 
                         Image={Blog2}
-                        Blog='Hot dog dressed in mustard, accompanied by a side of ketchup' 
+                        Blog='Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod...' 
                         Date='November 10, 2024' 
                         Views='560' 
                         Comments='2' 
                         Profile={Profile2} 
                         Name='Adrian'
                     />
-
                     <Blog 
                         Image={Blog3}
-                        Blog='Hot dog dressed in mustard, accompanied by a side of ketchup' 
+                        Blog='Lorem ipsum dolor sit amet, consectetur notted adipisicing elit sed do eiusmod...' 
                         Date='November 10, 2024' 
                         Views='560' 
                         Comments='2' 

@@ -7,13 +7,13 @@ const Contact = () => {
     return (
         <>
             <Header/>
+            <PageSection Title='CONTACT' Description='Now you can reach us! do not hesitate'/>
             <main class="Contact">
-                <PageSection Title='CONTACT' Description='Now you can reach us! do not hesitate'/>
                 <div>
                     <form>
-                        <div className='Form__Header'>
-                            <h1>Contact Us</h1>
-                            <h3>Get in touch with us!</h3>
+                        <div className='Header Flex-Center Flex-Column'>
+                            <h1>CONTACT US</h1>
+                            <h3>GET IN TOUCH WITH US!</h3>
                         </div>
                         <div className='Form__Body'>
                             <div className='Input__container'>
@@ -29,11 +29,9 @@ const Contact = () => {
                             <div className='Input__container'>
                                 <input type="text" placeholder="Subject" id="subject"/>
                             </div>
-
                             <div className='Input__container'>
                                 <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                             </div>
-
                             <div className='Input__container'>
                                 <input type="submit" value="Send"/>
                             </div>
