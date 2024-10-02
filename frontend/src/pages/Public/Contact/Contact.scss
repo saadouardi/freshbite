@@ -4,9 +4,10 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+    padding: 20px;
     form{
         width: 600px;
-        background-color: orange;
+        background-color: var(--bgColor);
         color: white;
         box-shadow: .5px .5px 15px rgb(8, 8, 8);
         padding: 15px;
@@ -17,6 +18,7 @@
         .Header{
             h1, h3{
                 color: white;
+                font-size: 40px;
             }
         }
         .Form__Body{
@@ -40,8 +42,8 @@
             }
         }
         input ,textarea{
-            color: black;
-            background-color: rgba(101, 100, 100, 0.493);
+            color: var(--color);
+            background-color: var(--color-bm);
             width: 100%;
             border-radius: 4px;
             padding-left: 10px;
@@ -54,7 +56,7 @@
         }
         input::placeholder,
         textarea::placeholder{
-            color: black;
+            color: var(--hover);
             font-size: 15px;
             font-family: var(--font-secondary);
             padding-left: 2px;
@@ -65,8 +67,8 @@
         }
         input[type='submit']{
             width: 150px;
-            color: white;
-            background-color: rgb(0, 94, 255);
+            color: var(--color);
+            background-color: var(--color-bm);
             cursor: pointer;
         }
     }

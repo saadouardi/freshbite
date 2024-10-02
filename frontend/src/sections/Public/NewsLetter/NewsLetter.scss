@@ -1,0 +1,48 @@
+section.Newsletter{
+    background-color: var(--secondary-bgColor-bm);
+    padding: 100px 0;
+    .Main-Newsletter{
+        gap: 10px 100px;
+    }
+    .title-description{
+        align-items: start !important;
+    }
+    svg{
+        height: 90px;
+        width: 90px;
+        color: var(--color);
+    }
+    h3{
+        font-size: 30px;
+        color: var(--color);
+    }
+    h1{
+        font-size: 40px;
+        text-align: start;
+    }
+    input{
+        height: 50px;
+        width: 250px;
+        background-color: var(--primary-bgColor-bm);
+        color: black;
+        border-radius: 4px 0 0 4px;
+        padding-left: 5px;
+    }
+    input::placeholder{
+        color: grey;
+    
+    }
+    button{
+        height: 50px;
+        border-radius: 0 4px 4px 0;
+        transition: all 0.3s ease-in-out;
+    }
+    button:hover{
+        background-color: rgb(0, 0, 0);
+        color: white;
+    }
+    input:focus,
+    input:active{
+        outline: none;
+    }
+}

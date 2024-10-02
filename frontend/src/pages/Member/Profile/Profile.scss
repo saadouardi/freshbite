@@ -1,0 +1,24 @@
+.user-dashboard{
+    width: 800px;
+    background-color: white;
+    box-shadow: .2px .2px 5px black;
+    border-radius: 9px;
+    .dashboard-inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .dahsboard-title, .personal-details, .address, .delete-account{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    .double-inputs{
+        input{
+            width: 100px;
+        }
+    }
+}

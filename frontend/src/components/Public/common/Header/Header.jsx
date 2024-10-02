@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar } from '../Navbar/Navbar';
+import { User } from '../../../Member/User/User';
 import { Cart } from '../../Shop/Cart/Cart';
 import { Logo } from '../Logo/Logo';
-
 import './Header.scss';
 
 export const Header = () => {
@@ -78,10 +78,8 @@ export const Header = () => {
                     <Navbar/>
                 </div>
                 <div className='Flex-Center'>
-                    <div className="Auth-Icons Flex-Center">                
-                        <div className='Icon-Bg'>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M4 22C4 17.5817 7.58172 14 12 14C16.4183 14 20 17.5817 20 22H4ZM12 13C8.685 13 6 10.315 6 7C6 3.685 8.685 1 12 1C15.315 1 18 3.685 18 7C18 10.315 15.315 13 12 13Z"></path></svg>                    
-                        </div>
+                    <div className="Auth-Icons Flex-Center">
+                        <User/>              
                         <a href="/wishlist">
                             <div className='Icon-Bg'>
                                 <button>2</button>

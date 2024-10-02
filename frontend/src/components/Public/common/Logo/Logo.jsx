@@ -1,5 +1,5 @@
 import React from 'react';
-import LogoImg from '../../../../assets/images/logo/restaurant-logo.png';
+import LogoImg from '../../../../assets/images/logo/logo.png';
 import './Logo.scss';
 
 export const Logo = () => {

@@ -17,16 +17,24 @@ export const Categories = () => {
             <div>
                 <div className='Flex-Center Flex-Column'>
                     <div className='Flex-Center'>
-                        <Category Image={Beef} Text='Burgers'/>
-                        <Category Image={ChickenWings} Text='Chicken Wings'/>
-                        <Category Image={Pasta} Text='Pasta'/>
-                        <Category Image={Pizza} Text='Pizzas'/>
+                        <div className='Flex-Center'>
+                            <Category Image={Beef} Text='Burgers'/>
+                            <Category Image={ChickenWings} Text='Chicken Wings'/>
+                        </div>
+                        <div className='Flex-Center'>
+                            <Category Image={Pasta} Text='Pasta'/>
+                            <Category Image={Pizza} Text='Pizzas'/>
+                        </div>
                     </div>
                     <div className='Flex-Center'>
-                        <Category Image={Sandwish} Text='Sandwish'/>
-                        <Category Image={Salads} Text='Salads'/>
+                        <div className='Flex-Center'>
+                            <Category Image={Sandwish} Text='Sandwish'/>
+                            <Category Image={Salads} Text='Salads'/>
+                        </div>
+                        <div className='Flex-Center'>
                         <Category Image={Beef} Text='Burgers'/>
                         <Category Image={ChickenWings} Text='Chicken Wings'/>
+                        </div>
                     </div>
                 </div>
             </div>

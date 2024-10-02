@@ -13,10 +13,14 @@ export const SpecialDeals = () => {
             <Title Image='' Span='Our' Text='Special Deals'/>
             <div>
                 <div className="Flex-Center">
-                    <Product Image={Dish1} Name='Beef Burger' Description='Cheese Burger' Currency='$' Price='4.99'/>
-                    <Product Image={Dish2} Name='Burger Ingredient' Description='Marguarita' Currency='$' Price='8.99'/>
-                    <Product Image={Dish3} Name='Cheese Burger' Description='Sandwish' Currency='$' Price='9.99'/>
-                    <Product Image={Dish4} Name='Chicken Burger' Description='Cheese Burger' Currency='$' Price='6.99'/>
+                    <div className='Flex-Center'>
+                        <Product Image={Dish1} Name='Beef Burger' Description='Cheese Burger' Currency='$' Price='4.99'/>
+                        <Product Image={Dish2} Name='Burger Ingredient' Description='Marguarita' Currency='$' Price='8.99'/>
+                    </div>
+                    <div className='Flex-Center'>
+                        <Product Image={Dish3} Name='Cheese Burger' Description='Sandwish' Currency='$' Price='9.99'/>
+                        <Product Image={Dish4} Name='Chicken Burger' Description='Cheese Burger' Currency='$' Price='6.99'/>
+                    </div>
                 </div>
             </div>
         </section>

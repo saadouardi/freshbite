@@ -14,46 +14,42 @@ export const Chefs = () => {
             <Title Image='' Span='Our' Text='Best Chefs'/>
             <div>
                 <div class="Flex-Center">
-                    <Chef 
-                        Image={Chef1} 
-                        Name='Sarah Johnson'
-                        Position='Waiter' 
-                        LinkedIn='d' 
-                        Instagram='d' 
-                        Twitter='d'
-                    />
-                    <Chef 
-                        Image={Chef2}
-                        Name='Ethan Rodriguez'
-                        Position='Head Chef'
-                        LinkedIn='d' 
-                        Instagram='d' 
-                        Twitter='d'
-                    />
-                    <Chef 
-                        Image={Chef3} 
-                        Name='Emily Brooks'
-                        Position='Fry Chef' 
-                        LinkedIn='d' 
-                        Instagram='d' 
-                        Twitter='d'
-                    />
-                    <Chef 
-                        Image={Chef4} 
-                        Name='Ethan Rodriguez'
-                        Position='Cashier' 
-                        LinkedIn='d' 
-                        Instagram='d' 
-                        Twitter='d'
-                    />
-                    <Chef 
-                        Image={Chef5} 
-                        Name='Omar Jackson'
-                        Position='Grill Master'
-                        LinkedIn='d' 
-                        Instagram='d' 
-                        Twitter='d'
-                    />
+                    <div className='Flex-Center'>
+                        <Chef 
+                            Image={Chef1} 
+                            Name='Sarah Johnson'
+                            Position='Waiter' 
+                            LinkedIn='d' 
+                            Instagram='d' 
+                            Twitter='d'
+                        />
+                        <Chef 
+                            Image={Chef2}
+                            Name='Ethan Rodriguez'
+                            Position='Head Chef'
+                            LinkedIn='d' 
+                            Instagram='d' 
+                            Twitter='d'
+                        />
+                    </div>
+                    <div className='Flex-Center'>
+                        <Chef 
+                            Image={Chef3} 
+                            Name='Emily Brooks'
+                            Position='Fry Chef' 
+                            LinkedIn='d' 
+                            Instagram='d' 
+                            Twitter='d'
+                        />
+                        <Chef 
+                            Image={Chef4} 
+                            Name='Ethan Rodriguez'
+                            Position='Cashier' 
+                            LinkedIn='d' 
+                            Instagram='d' 
+                            Twitter='d'
+                        />
+                    </div>
                 </div>
             </div>
         </section>

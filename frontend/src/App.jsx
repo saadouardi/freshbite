@@ -8,7 +8,9 @@ import Cart from './pages/Public/Shop/Cart/Cart';
 import Checkout from './pages/Public/Shop/Checkout/Checkout';
 import ChefsPage from './pages/Public/Chefs/Chefs';
 import GalleryPage from './pages/Public/Gallery/Gallery';
+import Blog from './pages/Public/Blog/Blog';
 import Contact from './pages/Public/Contact/Contact';
+import Profile from './pages/Member/Profile/Profile';
 
 function App() {
   return (
@@ -24,7 +26,9 @@ function App() {
                 <Route path="/checkout" exact component={Checkout}/>
                 <Route path="/chefs" exact component={ChefsPage}/>
                 <Route path="/gallery" exact component={GalleryPage}/>
+                <Route path="/blog" exact component={Blog}/>
                 <Route path="/contact" exact component={Contact}/>
+                <Route path="/profile" exact component={Profile}/>
               </Switch>
           </Router>
     </>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from '../../../components/Public/common/Header/Header';
 import { PageSection } from '../../../components/Public/common/PageSection/PageSection';
+import { Footer } from '../../../components/Public/common/Footer/Footer';
 import './Contact.scss';
 
 const Contact = () => {
@@ -39,6 +40,7 @@ const Contact = () => {
                     </form> 
                 </div>
             </main>    
+            <Footer/>
         </>
     )
 }

@@ -1,12 +1,18 @@
 header{
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 5;
     .TopBar{
         background-color: var(--bgColor);
         padding: 10px 20px;
         ul{
             li{
+                a{
+                    color: white;
+                    svg, p{
+                        color: white;
+                    }
+                }
                 a:hover{
                     svg, p{
                         color: var(--HoverbgColor-bm);
@@ -15,6 +21,7 @@ header{
             }
             li::after{
                 content: '|';
+                color: white;
             }
             li:last-child::after{
                 content: '';
@@ -99,5 +106,4 @@ header{
 }
 /* ----------- DESCKTOP DEVICES----------- */
 @media only screen and(max-width: 1440px ){
-
 }

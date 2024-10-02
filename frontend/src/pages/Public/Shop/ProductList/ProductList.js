@@ -18,7 +18,7 @@ const ProductList = () => {
             acc.push({ type: menu.type, image: menu.image });
         }
         return acc;    
-    }, []);
+    }, []); 
     const menusFiltered = menus.filter(menu => {
         return filter === 'all' || menu.type.toLowerCase() === filter.toLowerCase(); //
     });
@@ -26,7 +26,6 @@ const ProductList = () => {
         setFilter(selectedValue);
         history.push(`/menu/${selectedValue}`);
     };
-    
     const handleSearch = () =>{
         //
     }
@@ -48,13 +47,13 @@ const ProductList = () => {
             <Header/>
             <PageSection Title='MENU'/>
             <main>
-                <div className='Menu Flex-Center'>
+                <div className='Page-Menu Flex-Center'>
                     <div className='Product-Filter'>
-                        <div className='Flex-Center Flex-Column'>
-                                <div title='All' className='Filter-Container Flex-Center' onClick={() => handleFilter('all')}>
-                                    <img src={Food} alt='' />
-                                    <p>All</p>
-                                </div>
+                        <div className='Main-Filter Flex-Center Flex-Column'>
+                            <div title='All' className='Filter-Container Flex-Center' onClick={() => handleFilter('all')}>
+                                <img src={Food} alt='' />
+                                <p>All</p>
+                            </div>
                             {menusTypes.map((menu, index) =>(
                                 <div title='menu.type' className='Filter-Container Flex-Center' key={index} value={menu.type} onClick={() => handleFilter(menu.type)}>
                                     <img src={menu.image} alt={menu.type} />
@@ -77,7 +76,7 @@ const ProductList = () => {
                                 />
                             ))
                             ) : (
-                                <div>Loading...</div>
+                                <div className='Flex-Center'>Loading...</div>
                             )
                         }
                     </div>

@@ -1,0 +1,25 @@
+section.Promotion{
+    background-color: var(--secondary-bgColor-bm);
+    .promotion-title-images{
+        align-items: start !important;
+        h1{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+            color: var(--color);
+        }
+    }
+    .StoreApps{
+        img{
+            height: 60px;
+            width: 150px;
+        }
+    }
+    .App-Image{
+        img{
+            height: 500px;
+            width: 400px;
+        }
+    }
+}
