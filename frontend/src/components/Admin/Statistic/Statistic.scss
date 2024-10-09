@@ -1,0 +1,28 @@
+.Statistic{
+    cursor: pointer;
+    text-decoration: none;
+    .Statistic-Content{
+        background-color: rgb(47, 110, 248);
+        border-radius: 16px;
+        width: 250px;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        .Icon-Title{
+            svg{
+                height: 80px;
+                width: 80px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+        .Statistic-Text{
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+}

@@ -39,7 +39,6 @@
     --secondary--font-family: 'Oswald';
         // #F5B70A #141124  #F76E11 #C4C4C4 #7865FF #FF766B #F5B70A  #F5F7F8
 }
-
 /*------------------------INITIALISATION-------------------------*/
 html{
     scroll-behavior: smooth;
@@ -184,22 +183,59 @@ svg{
 table{
     border-collapse: collapse;
     th, td{
-        border: 2px solid white;
+        border: 5px solid black;
         padding: 20px;
     }
-    tr{
+    th{
+        background-color: var(--color);
         color: white;
+    }
+    tr{
+        color: black;
+        background-color: white;
     }
     thead{
     }
     tbody{
-
     }
     tfoot{
-
-    }
+        background-color: transparent;
+        display: flex;
+        padding: 20px 0;
+    }   
 }
 // FlexBox //
+.flex-center-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.flex-start-center{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+}
+.flex-center-start{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.flex-column{
+    flex-direction: column;
+}
+.flex-row{
+    flex-direction: row;
+}
+// Padding //
+.primary-padding{
+    padding: 20px;
+}
+.secondary-padding{
+    padding: 10px;
+}
 .Flex-Center{
     display: flex;
     align-items: center !important;
@@ -381,6 +417,149 @@ table{
     background-position: center center;
 }
 
+// AUTHENTICATION //
+.Authentication{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+
+.Logo-Container{
+    img{
+    height: 150px;
+    width: 150px;
+    }
+    p{
+    font-size: 30px;
+    }
+}
+
+.SocialMedia{
+    background-color: white;
+    width: 200px;
+    padding: 4px 50px;
+    border: 2px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    img{
+    height: 35px;
+    width: 35px;
+    }
+}
+
+}
+form{
+width: 80%;
+height: fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+padding: 10px;
+
+input{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(175, 175, 175);
+    color: black;
+    padding-left: 40px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+input:hover{
+    background-color: rgb(201, 201, 201);
+}
+input[type="submit"]{
+    background-color: black;
+    color: white;
+    padding: 0;
+    cursor: pointer;
+    width: calc(300px + 40px);
+}
+input[type="submit"]:hover{
+    background-color: rgb(39, 37, 37);
+}
+input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+}
+
+.input__container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    svg{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translate(-50%,-50%);
+    }
+    .Toogle-Svg{
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    }
+}
+}
+.form-container{
+width: 800px;
+display: flex;
+flex-wrap: wrap;
+}
+.Left-Side , .Right-Side{
+padding: 50px 20px;
+flex-grow: 1;
+}
+.Left-Side{
+border-radius: 50px 0 0 50px;
+width: 300px;
+background-color: rgb(162, 162, 162);
+color: white;
+}
+.Right-Side{
+border-radius: 0 50px 50px 0;
+width: 400px;
+height: fit-content;
+background-color: white;
+color: black;
+}
+.LogIn__links_container{
+width: calc(300px + 40px);
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 20px;
+.input__container{
+    width: fit-content;
+}
+.Forgot-Password{
+    a{
+    font-size: 15px;
+    }
+}
+}
+p.authMessage{
+color: red;
+}
+.agree__container{
+padding: 5px;
+width: 100%;
+display: flex;
+align-items: start;
+justify-content: center;
+flex-direction: column;
+gap: 15px;
+width: calc(300px + 20px);
+text-align: center;
+}
 @keyframes OpenCart {
     0%{
         right: -150%;
@@ -397,7 +576,6 @@ table{
         right: -150%;
     }
 }
-
 /* MOBILE VERSION */
 @media screen and (max-width :995px) {
     .slider__data,

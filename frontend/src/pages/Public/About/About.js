@@ -9,7 +9,7 @@ const About = () => {
   return (
     <>
         <Header/>
-        <PageSection Title='About us' Description='Now you will get to know us'/>
+        <PageSection Title='ABOUT US' Description='Now you will get to know us'/>
         <main>
             <div className='About Flex-Center'>
               <div>

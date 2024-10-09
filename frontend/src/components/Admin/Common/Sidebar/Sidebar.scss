@@ -1,0 +1,309 @@
+.Sidebar-Content{
+    background-color: rgb(29, 29, 29);
+    color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .Company{
+        background-color: rgb(100, 100, 100);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100px;
+        padding: 5px 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        a{
+            text-decoration: none;
+            .Company-Content{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                svg{
+                    height: 50px;
+                    width: 50px;
+                }
+                span{
+                    font-size: 20px;
+                }
+            }
+        }
+        a:hover{
+            color: white;
+        }
+    }
+
+    .Lists{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
+        gap:8px;
+        .List{
+            width: 95%;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            a{
+                width: 95%;
+                font-size: 20px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 5px;
+                border-radius: 9px;
+                background-color: rgba(128, 128, 128, 0.188);
+                .List-Content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap:8px;
+                }
+                .List-Row{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s linear;
+                }
+            }
+    
+            a:hover{
+                background-color: grey;
+                color: white;
+                .List-Row{
+                    transform: rotate(360deg);
+
+                }
+            }
+            a.active{
+                background-color: rgb(0, 98, 255);
+                color: white;
+            }
+
+
+            .Dropdown{
+                width: 200px;
+                display: none;
+                background-color: rgb(53, 53, 53);
+                padding: 10px;
+                border-radius: 9px;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                z-index: 900000;
+                gap: 5px;
+                a{
+                    background-color: rgb(0, 98, 255);
+                }
+            }      
+        }
+        .List:hover{
+            .Dropdown{
+                display: flex;
+                flex-direction: column;
+
+            }
+        }
+    
+        
+    }
+
+    .UserProfile{
+        background-color: rgb(58, 58, 58);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        .Profile{
+            position: relative;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            cursor: pointer;
+
+            img{
+                height: 40px;
+                width: 40px;
+            }
+
+            .row-up{
+                display: none;
+            }
+
+            .UserMenu{
+                display: none;
+                position: absolute;
+                bottom: 100%;
+                left: 130px;
+
+                .UserMenu__dropdown{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: rgb(209, 209, 209);
+                    box-shadow: 2px 2px 10px rgb(71, 71, 71);
+                    width: 200px;
+                    border-radius: 9px;
+                    padding-top: 10px;
+                    hr{
+                        background-color: black;
+                    }
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: start;
+                        text-decoration: none;
+                        color: black;
+                        height: fit-content;
+                        padding: 2px 15px;
+                    }
+
+                    a:hover{
+                        background-color: rgb(185, 185, 185);
+                    }
+
+                    a:last-child{
+                        padding: 10px;
+                        background-color:red;
+                        color: white;
+                        border-radius:  0 0 9px 9px;
+                        justify-content: center;
+                    }
+                    a:last-child:hover{
+                        background-color:black;
+                    }
+                }
+            }
+        }
+    }
+
+    .UserProfile:hover{
+        .row-down{
+            display: none;
+        }
+        .row-up,.UserMenu{
+            display: block;
+        }
+
+    }
+}
+
+
+/*---------------------- MOBILE VERSION----------------------*/
+@media screen and (max-width: 768px){
+    
+    .Sidebar{
+        .Company{
+            a{
+                .Company-Content{
+                    svg{
+
+                    }
+                    span{
+                        display: none;
+                    }
+                }
+            }
+            a:hover{
+            }
+        }
+    
+        .Lists{
+            .List{
+                width: fit-content;
+                a{
+                    .List-Content{
+                        span{
+                            display: none;
+                        }
+                    }
+                    .List-Row{
+                        display: none;
+                    }
+                }
+        
+                a:hover{
+
+                }
+                a.active{
+
+                }
+
+                .Dropdown{
+                    a{    
+                    }
+                }      
+            }
+            .List:hover{
+                .Dropdown{
+                    display: flex;
+                    flex-direction: column;
+
+                }
+            }
+    
+        
+        }
+    
+        .UserProfile{
+            .Profile{
+                }
+    
+                .row-up{
+                }
+
+                .UserMenu{
+                    .UserMenu__dropdown{
+
+                        hr{
+                        }
+                        a{
+                        }
+
+                        a:hover{
+                        }
+
+                        a:last-child{
+
+                        }
+                        a:last-child:hover{
+                        }
+                    }
+                }
+            }
+        }
+    
+        .UserProfile:hover{
+            .row-down{
+            }
+            .row-up,.UserMenu{
+            }
+
+    }
+}
+
+
+
+/* ----------- TABLET DEVICES----------- */
+@media only screen and (max-width: 768px ) and (max-width:1023px){
+
+}
+
+/* ----------- LAPTOP DEVICES----------- */
+@media only screen and (max-width: 1024px ) and (max-width:1439px){
+
+}
+
+/* ----------- DESCKTOP DEVICES----------- */
+@media only screen and(max-width: 1440px ){
+
+}

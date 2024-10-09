@@ -12,7 +12,7 @@ const Cart = () => {
             <Header/>
             <PageSection Title='Cart'/>
             <main className='Cart'>
-                <div className='Main-Cart Flex-Center'>
+                <div className='Main-Cart flex-start-center'>
                     <div className='Cart-Table'>
                         <table>
                             <thead>
@@ -74,7 +74,7 @@ const Cart = () => {
                                 </tr>
                             </tbody>
                             <tfoot>
-                                <tr key="">
+                                <tr key="" >
                                     <button>Continue Shopping</button>
                                 </tr>
                             </tfoot>

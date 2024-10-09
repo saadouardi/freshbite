@@ -3,11 +3,21 @@
     align-items: center;
     justify-content: start;
     flex-wrap: wrap;
-    a{
-        padding: 5px 10px;
-        color: var(--color-dm);
-    }
-    a:hover{
-        color: var(--hover);
+    ul{
+        li{
+            a{
+                padding: 5px 10px;
+                color: var(--color-dm);
+            }
+            a:hover{
+                color: var(--hover);
+            }
+        }
+        li.active{
+            a{
+                color: var(--color);
+                font-weight: bold;
+            }
+        }
     }
 }

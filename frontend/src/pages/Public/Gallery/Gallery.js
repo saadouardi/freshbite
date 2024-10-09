@@ -8,7 +8,7 @@ const GalleryPage = () => {
     return (
         <>
             <Header/>
-            <PageSection Title='Gallery' Description='What Special about us'/>
+            <PageSection Title='GALLERY' Description='What Special about us'/>
             <div className='Gellery'>
                 <Gallery/>
             </div>

@@ -1,5 +1,5 @@
 import React , { useEffect, useState } from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useHistory, useLocation } from 'react-router-dom';
 import { Header } from '../../../../components/Public/common/Header/Header';
 import { PageSection } from '../../../../components/Public/common/PageSection/PageSection';
 import { Footer } from '../../../../components/Public/common/Footer/Footer';
@@ -9,7 +9,12 @@ import Food from '../../../../assets/images/categories/chicken-wings.png';
 import './ProductList.scss';
 
 const ProductList = () => {
+    const location = useLocation();
     const history = useHistory();
+    const isActive = (path) => {
+        return location.pathname === `/menu/${path}`;
+    };
+    const [active, setActive] = useState('');
     const { filter: urlFilter } = useParams();
     const [menus, setMenus] = useState([]);
     const [filter, setFilter] = useState('all');
@@ -20,10 +25,11 @@ const ProductList = () => {
         return acc;    
     }, []); 
     const menusFiltered = menus.filter(menu => {
-        return filter === 'all' || menu.type.toLowerCase() === filter.toLowerCase(); //
+        return filter === 'all' || menu.type.toLowerCase() === filter.toLowerCase();
     });
     const handleFilter = (selectedValue) => {
         setFilter(selectedValue);
+        setActive(selectedValue);
         history.push(`/menu/${selectedValue}`);
     };
     const handleSearch = () =>{
@@ -42,6 +48,9 @@ const ProductList = () => {
             console.log('Error fetching Menus')
         }
     }, [urlFilter]);
+
+    console.log('path: ', location.pathname);
+    console.log('active: ', active);
     return (
         <>
             <Header/>
@@ -54,12 +63,14 @@ const ProductList = () => {
                                 <img src={Food} alt='' />
                                 <p>All</p>
                             </div>
-                            {menusTypes.map((menu, index) =>(
-                                <div title='menu.type' className='Filter-Container Flex-Center' key={index} value={menu.type} onClick={() => handleFilter(menu.type)}>
-                                    <img src={menu.image} alt={menu.type} />
-                                    <p>{menu.type}</p>
-                                </div>
-                            ))}
+                            {menusTypes.map((menu, index) =>{
+                                return (
+                                    <div className={`Filter-Container Flex-Center ${isActive({active}) ? 'active' : ''}`} key={index} onClick={() => { handleFilter(menu.type);}}>
+                                        <img src={menu.image} alt={menu.type} />
+                                        <p>{menu.type}</p>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                     <div className='Product-Lists Flex-Center'>

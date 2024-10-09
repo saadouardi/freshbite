@@ -14,8 +14,21 @@
         color: var(--color);
     }
 }
+
 .Logo:hover{
     h1{
-        color: var(--color);
+        color: var(--hover);
+    }
+    img{
+        animation: LogoImage 4s linear infinite;
+    }
+}
+
+@keyframes LogoImage {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }

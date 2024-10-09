@@ -1,0 +1,53 @@
+.Container-List {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.User-Table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  background-color: #ffffff; /* Set table background to white */
+}
+
+.User-Table th,
+.User-Table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+  color: #000000; /* Set text color to black */
+}
+
+.User-Table th {
+  background-color: #ffffff; /* Set header background to white */
+}
+
+.User-Table td {
+  background-color: #ffffff; /* Ensure cell background is white */
+}
+
+.User-Actions {
+  display: flex;
+  gap: 10px;
+}
+
+.User-Action {
+  cursor: pointer;
+  color: #000000; /* Set icon color to black */
+  font-size: 24px; /* Ensure icons are large enough to see */
+}
+
+.User-Action:hover {
+  color: #666666; /* Slightly lighter color on hover */
+}
+
+.User-Avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
