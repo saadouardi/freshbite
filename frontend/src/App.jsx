@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Switch } from "react-router-dom";
+
 import UserProvider from './components/Authentication/UserContext/UserProvider';
 import ProtectedRoute from './components/Authentication/ProtectedRoute/ProtectedRoute';
 import Login from './pages/Authentication/Login/Login';
