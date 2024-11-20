@@ -7,8 +7,8 @@
     padding: 20px;
     form{
         width: 600px;
-        background-color: var(--bgColor);
-        color: white;
+        background-color: var(--dark-secondary-bg);
+        color: black;
         box-shadow: .5px .5px 15px rgb(8, 8, 8);
         padding: 15px;
         display: flex;
@@ -17,59 +17,61 @@
         border-radius: 9px;
         .Header{
             h1, h3{
-                color: white;
+                color: black;
                 font-size: 40px;
             }
         }
-        .Form__Body{
+        .Form__Body {
             width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             gap: 8px;
-            .Input__container{
+            .Input__container {
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
                 gap: 5px;
                 
-                input{
+                input {
                     height: 50px !important;
                     width: 100%;
                 }
             }
         }
-        input ,textarea{
-            color: var(--color);
+        input, textarea {
+            color: white;
             background-color: var(--color-bm);
             width: 100%;
             border-radius: 4px;
             padding-left: 10px;
             outline: none;
-            border: none;
+            border: 2px solid var(--main-color);
             transition: all 0.2s ease-in;
         }
         textarea{
+            height: 200px;
+            resize: none;
             padding: 10px;
         }
         input::placeholder,
         textarea::placeholder{
-            color: var(--hover);
+            color: white;
             font-size: 15px;
             font-family: var(--font-secondary);
             padding-left: 2px;
         }
-        input:hover ,
-        textarea:hover{
-            box-shadow: .1px .1px 10px rgb(255, 255, 255);
-        }
+
         input[type='submit']{
+            background-color: var(--main-bg);
             width: 150px;
-            color: var(--color);
-            background-color: var(--color-bm);
+            color: white;
             cursor: pointer;
+        }
+        input[type='submit']:hover {
+            background-color: var(--main-hover);
         }
     }
 }

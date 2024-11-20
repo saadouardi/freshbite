@@ -1,35 +1,35 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
-
+import { useLocation, Link } from 'react-router-dom';
 import './Navbar.scss';
 
 export const Navbar = () => {
     const location = useLocation();
     const isActive = (path) => location.pathname === path;
+
     return (
         <>
             <div className="Navbar">
                 <ul>
                     <li className={isActive('/') ? 'active' : ''}>
-                        <a href="/">Home</a>
+                        <Link to="/">Home</Link>
                     </li>
                     <li className={isActive('/about') ? 'active' : ''}>
-                        <a href="/about">About</a>
+                        <Link to="/about">About</Link>
                     </li>
                     <li className={isActive('/menu') ? 'active' : ''}>
-                        <a href="/menu">Menu</a>
+                        <Link to="/menu">Menu</Link>
                     </li>
                     <li className={isActive('/chefs') ? 'active' : ''}>
-                        <a href="/chefs">Chefs</a>
+                        <Link to="/chefs">Chefs</Link>
                     </li>
                     <li className={isActive('/blog') ? 'active' : ''}>
-                        <a href="/blog">blog</a>
+                        <Link to="/blog">Blog</Link>
                     </li>
                     <li className={isActive('/gallery') ? 'active' : ''}>
-                        <a href="/gallery">Gallery</a>
+                        <Link to="/gallery">Gallery</Link>
                     </li>
                     <li className={isActive('/contact') ? 'active' : ''}>
-                        <a href="/contact">Contact</a>
+                        <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>

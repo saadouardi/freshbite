@@ -7,15 +7,16 @@
         li{
             a{
                 padding: 5px 10px;
-                color: var(--color-dm);
+                color: var(--color-bm);
+                font-size: 18px;
             }
             a:hover{
-                color: var(--hover);
+                color: var(--main-hover);
             }
         }
         li.active{
             a{
-                color: var(--color);
+                color: var(--main-color);
                 font-weight: bold;
             }
         }

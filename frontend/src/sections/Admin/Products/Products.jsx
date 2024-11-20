@@ -1,28 +1,28 @@
 import React ,{useState , useEffect } from 'react';
-import { Table } from '../../components/Common/Table/Table';
-import { Update , Delete } from '../../components/Common/Table/ActionButtons/ActionButtons';
+import { Table } from '../../../components/Admin/Common/Table/Table';
+import { Update , Delete } from '../../../components/Admin/Common/Table/ActionButtons/ActionButtons';
 import './Products.scss';
 
 export const ProductsSection = () => {
 
     const [products, setProducts] = useState([]);
     
-        useEffect(() => {
-            fetchProducts();
-        }, []);
-    
-        const fetchProducts = async () => {
-            try {
-                const response = await fetch('http://localhost:5000/api/products'); // Replace with your actual backend API endpoint
-                if (!response.ok) {
-                    throw new Error('Failed to fetch products');
-                }
-                const data = await response.json();
-                setProducts(data); // Assuming data is an array of products fetched from your backend
-            } catch (error) {
-                console.error('Error fetching products:', error);
+    useEffect(() => {
+        fetchProducts();
+    }, []);
+
+    const fetchProducts = async () => {
+        try {
+            const response = await fetch('http://localhost:5000/api/products');
+            if (!response.ok) {
+                throw new Error('Failed to fetch products');
             }
-        };
+            const data = await response.json();
+            setProducts(data);
+        } catch (error) {
+            console.error('Error fetching products:', error);
+        }
+    };
     
     const HeaderTitles = [
         'ID',
@@ -35,6 +35,7 @@ export const ProductsSection = () => {
         'Edit',
         'Delete'   
     ];
+
     const RowTitles = products.map(product => ({
         id: product.id.toString(),
         image: product.image,
@@ -49,6 +50,14 @@ export const ProductsSection = () => {
 
     return (
         <section className='Flex-Column'>
+            <div className='flex-center-center'>
+                <a href="add-product">
+                    <button className='btn btn-dark'>Add product</button>
+                </a>
+                <a href="/edit-product">
+                    <button className='btn btn-danger'>Edit product</button>
+                </a>
+            </div>
             <div className='Title-Section'>
                 <h1>PRODUCTS</h1>
             </div>

@@ -1,8 +1,11 @@
 .user-dashboard{
     width: 800px;
-    background-color: white;
+    background-color: var(--dark-secondary-bg);
     box-shadow: .2px .2px 5px black;
     border-radius: 9px;
+    input {
+        border: .5px solid var(--main-color);
+    }
     .dashboard-inputs{
         display: flex;
         flex-direction: column;

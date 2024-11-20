@@ -1,40 +1,51 @@
 import React, { useState } from 'react';
+import { Product } from '../../../../components/Admin/Product/Product';
 import './AddProduct.scss';
 
 export const AddProductSection = () => {
-    const [product, setProduct] = useState({
-        name: '',
-        category: 'fruit',
-        currency: 'usd',
-        quantity: 1,
-        price: 0,
-        image: null,
-    });
+    const [productName, setProductName] = useState('');
+    const [productCategory, setProductCategory] = useState('');
+    const [productCurrency, setProductCurrency] = useState('');
+    const [productPrice, setProductPrice] = useState('');
+    const [productQuantity, setProductQuantity] = useState('');
+    const [productImage, setProductImage] = useState(null);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setProduct((prevProduct) => ({
-            ...prevProduct,
-            [name]: value,
-        }));
-    };
-
-    const handleImageChange = (e) => {
-        setProduct((prevProduct) => ({
-            ...prevProduct,
-            image: e.target.files[0],
-        }));
-    };
-
+    const handleProductName = (e) => {
+        setProductName(e.target.value);
+    }
+    const handleProductCategory = (e) => {
+        setProductCategory(e.target.value);
+    }
+    const handleProductCurrency = (e) => {
+        setProductCurrency(e.target.value);
+    }
+    const handleProductPrice = (e) => {
+        setProductPrice(e.target.value);
+    }
+    const handleProductQuantity = (e) => {
+        setProductQuantity(e.target.value);
+    }
+    const handleProductImage = (e) => {
+        const uploadedImage = e.target.files[0];
+        if(uploadedImage) {
+            setProductImage(URL.createObjectURL(uploadedImage));
+        }
+    }
+    const handleFormValidation = () => {
+        if(productName && productCategory && productCurrency && productPrice && productQuantity && productImage){
+            return true;
+        }
+        return false;
+    }
     const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData();
-        formData.append('name', product.name);
-        formData.append('category', product.category);
-        formData.append('currency', product.currency);
-        formData.append('quantity', product.quantity);
-        formData.append('price', product.price);
-        formData.append('image', product.image);
+        formData.append('name', productName);
+        formData.append('category', productCategory);
+        formData.append('currency', productCurrency);
+        formData.append('quantity', productQuantity);
+        formData.append('price', productPrice);
+        formData.append('image', productImage);
 
         try {
             const response = await fetch('http://localhost:5000/api/products', {
@@ -52,69 +63,67 @@ export const AddProductSection = () => {
     };
 
     return (
-        <section className='AddProduct'>
-            <div className='AddProduct-Content'>
-                <div className='AddProduct-Header'>
-                    <h1>Add Product</h1>
-                    <hr />
+        <section className='add-product'>
+            <div className='add-product-form'>
+                <div className='add-product-header'>
+                    <h1 editable>Add product form</h1>
                 </div>
-                <form onSubmit={handleSubmit}>
-                    <div className='Input-Container'>
-                        <label>Product Name</label>
+                <div className='add-product-content'>
+                    <form onSubmit={handleSubmit}>
                         <input
                             type='text'
-                            name='name'
                             placeholder='Product Name'
-                            value={product.name}
-                            onChange={handleChange}
+                            onChange={handleProductName}
                         />
-                    </div>
-                    <div className='Input-Container'>
-                        <label>Select Category</label>
-                        <select name='category' value={product.category} onChange={handleChange}>
-                            <option value='fruit'>Fruit</option>
-                            <option value='vegetables'>Vegetables</option>
-                            <option value='meat'>Meat</option>
+                        <select name='category' onChange={handleProductCategory}>
+                            <option value='category' disabled>Category</option>
+                            <option value='burgers'>Burgers</option>
+                            <option value='pizzas'>Pizzas</option>
+                            <option value='pastas'>Pastas</option>
+                            <option value='drinks'>Drinks</option>
+                            <option value='salads'>Salads</option>
+                            <option value='sandwish'>Sandwish</option>
+                            <option value='chicken'>Chicken</option>
                         </select>
-                    </div>
-                    <div className='Input-Container'>
-                        <label>Currency</label>
-                        <select name='currency' value={product.currency} onChange={handleChange}>
-                            <option value='usd'>USD</option>
-                            <option value='eur'>EUR</option>
-                            <option value='chf'>CHF</option>
+                        <select name='currency' onChange={handleProductCurrency}>
+                            <option value='$'>USD</option>
+                            <option value='€'>EUR</option>
+                            <option value='CHF'>CHF</option>
                         </select>
-                    </div>
-                    <div className='Input-Container'>
-                        <label>Quantity</label>
                         <input
                             type='number'
                             name='quantity'
                             placeholder='01'
-                            value={product.quantity}
-                            onChange={handleChange}
+                            onChange={handleProductQuantity}
                         />
-                    </div>
-                    <div className='Input-Container'>
-                        <label>Price</label>
                         <input
                             type='number'
                             name='price'
                             placeholder='$10'
-                            value={product.price}
-                            onChange={handleChange}
+                            onChange={handleProductPrice}
                         />
-                    </div>
-                    <div className='Input-Container'>
-                        <label>Product Image</label>
-                        <input type='file' name='image' onChange={handleImageChange} />
-                    </div>
-                    <div className='Input-Container'>
-                        <button type='submit' className='Add-Btn'>
-                            Add
-                        </button>
-                    </div>
-                </form>
+                        <input 
+                            type='file' 
+                            name='image' 
+                            onChange={handleProductImage} 
+                        />
+                        <button type='submit' className='btn btn-dark' disabled={!handleFormValidation()}>Add Item</button>
+                    </form>
+                </div>
+            </div>
+            <div className='show-product-container'>
+                <div className='show-product-header'>
+                    <h1>Product</h1>
+                </div>
+                <div className='show-product-content'>
+                    <Product
+                        Image={productImage} 
+                        Name={productName} 
+                        Category={productCategory}
+                        Currency={productCurrency} 
+                        Price={productPrice}
+                    />
+                </div>
             </div>
         </section>
     );

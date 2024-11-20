@@ -4,7 +4,7 @@ import './Stats.scss';
 
 export const Stats = () => {
     return (
-        <section>
+        <section className='stats'>
             <div className='Stats'>
                 <div className='Container'>
                     <div className='Flex-Center flex-container'>

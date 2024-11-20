@@ -4,7 +4,7 @@
         box-shadow: .2px .2px 5px black;
     }
     .profile-card{
-        background-color: rgb(223, 232, 251);
+        background-color: var(--main-color);
         border-radius: 9px 9px 0 0;
         padding: 10px;
     }
@@ -18,8 +18,8 @@
             display: flex;
             align-items: center;
             justify-content: start;
-            padding: 10px 0;
-            svg, p{
+            padding: 10px;
+            svg, span {
                 color: grey;
             }
             svg{
@@ -31,7 +31,7 @@
         }
         a:hover{
             background-color: var(--hover);
-            svg, p{
+            svg, span{
                 color: black;
             }
         }

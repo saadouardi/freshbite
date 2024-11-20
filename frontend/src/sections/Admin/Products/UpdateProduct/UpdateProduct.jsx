@@ -5,10 +5,10 @@ export const UpdateProductSection = () => {
     const { id } = useParams();
 
     return (
-        <sec>
+        <section>
             <h1>Update Product</h1>
             <p>Product with id: {id}</p>
-        </sec>
+        </section>
     );
 };
 

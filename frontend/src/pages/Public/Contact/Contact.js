@@ -12,14 +12,9 @@ const Contact = () => {
             <main class="Contact">
                 <div>
                     <form>
-                        <div className='Header Flex-Center Flex-Column'>
-                            <h1>CONTACT US</h1>
-                            <h3>GET IN TOUCH WITH US!</h3>
-                        </div>
                         <div className='Form__Body'>
                             <div className='Input__container'>
-                                <input type="text" placeholder="First Name" id="firstName"/>
-                                <input type="text" placeholder="Last Name" id="lastName"/>
+                                <input type="text" placeholder="Full Name" id="firstName"/>
                             </div>
                             <div className='Input__container'>
                                 <input type="email" placeholder="Email Address" id="email"/>
@@ -28,13 +23,10 @@ const Contact = () => {
                                 <input type="tel" placeholder="Phone Number" id="phoneNumber"/>
                             </div>
                             <div className='Input__container'>
-                                <input type="text" placeholder="Subject" id="subject"/>
+                                <textarea name="" id="message" cols="10" rows="10" placeholder="Message"></textarea>
                             </div>
                             <div className='Input__container'>
-                                <textarea name="" id="message" cols="30" rows="10" placeholder="Message"></textarea>
-                            </div>
-                            <div className='Input__container'>
-                                <input type="submit" value="Send"/>
+                                <input type="submit" value="Send Message"/>
                             </div>
                         </div>
                     </form> 

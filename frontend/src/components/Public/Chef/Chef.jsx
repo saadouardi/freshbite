@@ -11,7 +11,7 @@ export const Chef = ({Image, Name, Position, FacebookUrl, LinkedInUrl, Instagram
                 <div className='ChefImg'>
                     <img src={Image} alt=""/>
                 </div>
-                <div className='ChefInfo Flex-Center Flex-Column'>
+                <div className='ChefInfo'>
                     <h3>{Name}</h3>
                     <p>{Position}</p>
                 </div>

@@ -23,7 +23,7 @@
         }
         .Blog-User-Container{
             width: 100%;
-            background-color: var(--secondary-bgColor-bm);
+            background-color: white;
             color: black;
             border-radius:0 0 9px 9px;
             display: flex;
@@ -55,13 +55,12 @@
                 }
             }
             button{
-                background-color: var(--bgColor);
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 10px;
                 padding: 5px 30px;
-                .Icon-Bg{
+                .icon{
                     padding: 5px;
                     border-radius: 100px;
                     background-color: white !important;

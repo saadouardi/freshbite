@@ -9,19 +9,13 @@ import './Products.scss';
 
 export const Products = () => {
     return (
-        <section>
+        <section className='products'>
             <Title Image='' Span='Our' Text='Special Dishes'/>
-            <div>
-                <div className="Flex-Center">
-                    <div className='Flex-Center'>
-                        <Product Id={1} Image={Product1} Name='Beef Burger' Description='Cheese Burger' Currency='$' Price='4.99'/>
-                        <Product Id={2} Image={Product2} Name='Burger Ingredient' Description='Marguarita' Currency='$' Price='8.99'/>
-                    </div>
-                    <div className='Flex-Center'>
-                        <Product Id={3} Image={Product3} Name='Cheese Burger' Description='Sandwish' Currency='$' Price='9.99'/>
-                        <Product Id={4} Image={Product4} Name='Chicken Burger' Description='Cheese Burger' Currency='$' Price='6.99'/>
-                    </div>
-                </div>
+            <div className="product-list flex-center-spacebetween">
+                    <Product Id={1} Image={Product1} Name='Beef Burger' Description='Cheese Burger' Currency='$' Price='4.99'/>
+                    <Product Id={2} Image={Product2} Name='Burger Ingredient' Description='Marguarita' Currency='$' Price='8.99'/>
+                    <Product Id={3} Image={Product3} Name='Cheese Burger' Description='Sandwish' Currency='$' Price='9.99'/>
+                    <Product Id={4} Image={Product4} Name='Chicken Burger' Description='Cheese Burger' Currency='$' Price='6.99'/>
             </div>
         </section>
     )

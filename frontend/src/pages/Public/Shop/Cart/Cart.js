@@ -5,82 +5,86 @@ import { Footer } from '../../../../components/Public/common/Footer/Footer';
 import Burger from '../../../../assets/images/menu/burgers/BeefBurger.png';
 import Burger2 from '../../../../assets/images/menu/burgers/DoublePattyBurger.png';
 import Burger3 from '../../../../assets/images/menu/burgers/SizzleSnapBurgers.png';
+import { Quantity } from '../../../../components/Public/Shop/Quantity/Quantity';
 import './Cart.scss';
+
 const Cart = () => {
     return (
         <>
             <Header/>
             <PageSection Title='Cart'/>
             <main className='Cart'>
-                <div className='Main-Cart flex-start-center'>
-                    <div className='Cart-Table'>
+                <div className='main-cart'>
+                    <div className='cart-table'>
                         <table>
                             <thead>
                                 <tr key="">
+                                    <th>Remove</th>
                                     <th>PRODUCT</th>
                                     <th>PRICE</th>
                                     <th>QUANTITY</th>
-                                    <th>SUBTOTAL</th>
-                                </tr>                              
+                                    <th>Subtotal</th>
+                                </tr>
                             </thead>
                             <tbody>
-                                <tr key="">
-                                    <td className='Flex-Center'>
-                                        <button className='Danger'>X</button>
-                                        <img src={Burger} alt="" />
-                                        <h1>Crunch Grillhouse Burger</h1>
+                                <tr key="1">
+                                    <td>
+                                        <div className='icon'>
+                                            <svg className='' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span>$12.99</span>
+                                        <div className='product-image-name flex-center-center'>
+                                            <img src={Burger} alt="" />
+                                            <h1>Crunch Burger</h1>
+                                        </div>
                                     </td>
+                                    <td>$25.99</td>
                                     <td>
-                                        <span>2</span>
+                                        <Quantity/>
                                     </td>
-                                    <td>
-                                        <span>$12.99</span>
-                                    </td>
+                                    <td>$25.99</td>
                                 </tr>
-                                <tr key="">
-                                    <td className='Flex-Center'>
-                                        <button className='Danger'>X</button>
-                                        <img src={Burger2} alt="" />
-                                        <h1>Crunch Grillhouse Burger</h1>
+                                <tr key="1">
+                                    <td>
+                                        <div className='icon'>
+                                            <svg className='' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span>$12.99</span>
+                                        <div className='product-image-name flex-center-center'>
+                                            <img src={Burger} alt="" />
+                                            <h1>Crunch Burger</h1>
+                                        </div>
                                     </td>
+                                    <td>$25.99</td>
                                     <td>
-                                        <span>2</span>
+                                        <Quantity/>
                                     </td>
-                                    <td>
-                                        <span>$12.99</span>
-                                    </td>
+                                    <td>$25.99</td>
                                 </tr>
-                                <tr key="">
-                                    <td className='Flex-Center'>
-                                        <button className='Danger'>X</button>
-                                        <img src={Burger3} alt="" />
-                                        <h1>Crunch Grillhouse Burger</h1>
+                                <tr key="1">
+                                    <td>
+                                        <div className='icon'>
+                                            <svg className='' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M17 6H22V8H20V21C20 21.5523 19.5523 22 19 22H5C4.44772 22 4 21.5523 4 21V8H2V6H7V3C7 2.44772 7.44772 2 8 2H16C16.5523 2 17 2.44772 17 3V6ZM18 8H6V20H18V8ZM9 11H11V17H9V11ZM13 11H15V17H13V11ZM9 4V6H15V4H9Z"></path></svg>
+                                        </div>
                                     </td>
                                     <td>
-                                        <span>$12.99</span>
+                                        <div className='product-image-name flex-center-center'>
+                                            <img src={Burger} alt="" />
+                                            <h1>Crunch Burger</h1>
+                                        </div>
                                     </td>
+                                    <td>$25.99</td>
                                     <td>
-                                        <span>2</span>
+                                        <Quantity/>
                                     </td>
-                                    <td>
-                                        <span>$12.99</span>
-                                    </td>
+                                    <td>$25.99</td>
                                 </tr>
                             </tbody>
-                            <tfoot>
-                                <tr key="" >
-                                    <button>Continue Shopping</button>
-                                </tr>
-                            </tfoot>
                         </table>
                     </div>
-                    <div className='Cart-Summary Primary-Container'>
+                    <div className='cart-summary'>
                         <div>
                             <h1>ORDER SUMMARY</h1>
                             <hr/>

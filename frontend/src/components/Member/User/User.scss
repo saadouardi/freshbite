@@ -17,7 +17,7 @@
         .Dropdown{
             width: 300px;
             height: fit-content;
-            background-color: var(--primary-bgColor-bm);
+            background-color: var(--dark-secondary-bg);
             border-radius: 9px;
             box-shadow: .2px .2px 5px grey;
             display: flex;
@@ -30,7 +30,7 @@
             top: 100%;
             right: 15px;
             hr{
-                background-color: black;
+                background-color: rgb(255, 255, 255);
                 height: 2px;
                 width: 100%;
                 border: none;
@@ -50,7 +50,7 @@
                 transition: all 0.3s linear;
             }
             a:hover{
-                background-color: rgb(188, 188, 188);
+                background-color: rgb(68, 68, 68);
             }
             a:last-child{
                 height: 40px;
@@ -65,7 +65,7 @@
             }
             button.Logout{
                 width: 100%;
-                background-color: red;
+                background-color: red !important;
                 svg, span{
                     color: white;
                 }

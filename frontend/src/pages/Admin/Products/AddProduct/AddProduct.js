@@ -1,21 +1,26 @@
 import React from 'react';
-import { Header } from '../../../components/Common/Header/Header';
-import { Sidebar } from '../../../components/Common/Sidebar/Sidebar';
-import { AddProductSection } from '../../../sections/Products/AddProduct/AddProduct';
+import { Header } from '../../../../components/Admin/Common/Header/Header';
+import { Sidebar } from '../../../../components/Admin/Common/Sidebar/Sidebar';
+import { AddProductSection } from '../../../../sections/Admin/Products/AddProduct/AddProduct';
+
 import './AddProduct.scss';
 
 const AddProduct = () => {
 
     return (
-        <main>
-            <Sidebar/>
-            <div className='Main-Content'>
-            <Header/>
-                <div className="Sections">
-                    <AddProductSection/>
+        <div className='admin-page'>
+            <aside className='admin'>
+                <Sidebar/>
+            </aside>
+            <main className='admin'>
+                <Header/>
+                <div className='Flex-Center'>
+                    <div className=''>
+                        <AddProductSection/>
+                    </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     );
 };
 

@@ -10,10 +10,9 @@
     align-items: start;
     justify-content: end;
     .SidebarCart{
-        background-color: var(--bgColor);
+        background-color: var(--main-bg);
         width: 500px;
         height: 100vh;
-        padding: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,6 +35,8 @@
         }
         .Cart-Body{
             width: 100%;
+            height: 400px;
+            overflow-y: scroll;
             .Product-Name-Quantity{
                 align-items: start !important;
             }
@@ -43,6 +44,20 @@
                 cursor: pointer;
                 .product-info{
                     width: 85%;
+                    .product-image {
+
+                    }
+
+                    .product-name-quantity {
+                        h1 {
+                            font-size: 20px;
+                        }
+                    }
+                    .product-price {
+                        h1 {
+                            font-size: 15px;
+                        }
+                    }
                 }
                 .product-remove{
                     .Icon-Bg{

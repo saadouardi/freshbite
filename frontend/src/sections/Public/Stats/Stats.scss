@@ -1,44 +1,46 @@
-.Stats{
-    padding: 20px;
-    .Container{
-        background-color: rgb(237, 237, 237);
-        box-shadow: 1px 1px 10px rgb(122, 122, 122);
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        padding: 10px;
-        gap: 10px;
-        border-radius: 9px;
-        .flex-container{
-            background-color: white;
-            color: black;
-            border: 2px solid rgb(136, 136, 136);
+section.stats {
+    .Stats {
+        width: 100%;
+        .Container{
+            background-color: rgb(237, 237, 237);
+            box-shadow: 1px 1px 10px rgb(122, 122, 122);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            gap: 10px;
             border-radius: 9px;
-            .Stat{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                gap: 10px;
-                h2{
-                    color: var(--color);
-                }
-                p{
-                    color: black;
-                }
-                hr{
-                    width: 3px;
-                    height: 90px;
-                    background-color: black;
-                    border: none;
+            .flex-container{
+                background-color: white;
+                color: black;
+                border: 2px solid rgb(136, 136, 136);
+                border-radius: 9px;
+                .Stat{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px;
+                    gap: 10px;
+                    h2{
+                        color: var(--color);
+                    }
+                    p{
+                        color: black;
+                    }
+                    hr{
+                        width: 3px;
+                        height: 90px;
+                        background-color: black;
+                        border: none;
+                    }
                 }
             }
-        }
-        .Image_Conatiner{
-            img{
-                height: 200px;
-                width: 300px;
+            .Image_Conatiner{
+                img{
+                    height: 200px;
+                    width: 300px;
+                }
             }
         }
     }

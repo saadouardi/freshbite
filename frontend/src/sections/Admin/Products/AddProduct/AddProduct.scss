@@ -1,32 +1,37 @@
-.AddProduct{
-    background-color: white;
-    width: 400px;
-    padding: 20px;
-    border-radius: 9px;
-    .AddProduct-Content{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        .AddProduct-Header{
-            h1{
-                color: black;
-            }
-        }
-        .Input-Container{
-            display: flex;
-            align-items: start;
-            justify-content: center;
-            width: 100%;
-            input{
-                width: 100%;
-            }
-            select,button{
-                width: calc(100% + 10px);
+section.add-product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 
+    .add-product-form,
+    .show-product-container{
+        width: 600px;
+        background-color: rgb(241, 241, 241);
+    }
+    .add-product-form{
+        .add-product-header{
+
+        }
+        .add-product-content{
+            form{
+                input, select{
+                    background-color: rgb(182, 180, 178);
+                    padding: 0 15px;
+                }
+                input, select, button{
+                    width: 100%;
+                    height: 50px;
+                    border-radius: 9px;
+                    color: white;
+                }
+                input::placeholder{
+                    color: white;
+                }
             }
         }
     }
-}
 
+    .show-product-container{
+
+    }
+}

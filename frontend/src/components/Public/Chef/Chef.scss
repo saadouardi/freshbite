@@ -29,10 +29,13 @@
         left: 0;
     }
     .ChefInfo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 0;
         h3{
             color: white;
         }

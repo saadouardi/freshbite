@@ -1,22 +1,15 @@
 .Sidebar-Content{
-    background-color: rgb(29, 29, 29);
     color: white;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 8px;
-
     .Company{
-        background-color: rgb(100, 100, 100);
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100px;
         padding: 5px 0;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
         a{
             text-decoration: none;
             .Company-Content{
@@ -37,30 +30,29 @@
             color: white;
         }
     }
-
     .Lists{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: start;
         flex-direction: column;
-        gap:8px;
         .List{
-            width: 95%;
-            position: relative;
+            width: 100%;
             display: flex;
-            align-items: center;
+            align-items: start;
             justify-content: center;
+            flex-direction: column;
             a{
-                width: 95%;
+                width: 100%;
                 font-size: 20px;
                 text-decoration: none;
                 display: flex;
                 align-items: center;
                 justify-content: space-between;
-                padding: 5px;
-                border-radius: 9px;
-                background-color: rgba(128, 128, 128, 0.188);
+                padding: 20px 10px;
+                svg, span{
+                    color: white;
+                }
                 .List-Content{
                     display: flex;
                     align-items: center;
@@ -71,51 +63,45 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    padding: 0 20px;
                     transition: all 0.2s linear;
                 }
             }
-    
             a:hover{
                 background-color: grey;
                 color: white;
                 .List-Row{
                     transform: rotate(360deg);
-
                 }
             }
             a.active{
-                background-color: rgb(0, 98, 255);
-                color: white;
+                background-color: white;
+                svg, span{
+                    color: black;
+                }
             }
-
-
             .Dropdown{
-                width: 200px;
                 display: none;
+                width: 100%;
                 background-color: rgb(53, 53, 53);
-                padding: 10px;
-                border-radius: 9px;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                z-index: 900000;
                 gap: 5px;
                 a{
-                    background-color: rgb(0, 98, 255);
+                    svg{
+                        height: 25px;
+                        width: 25px;
+                    }
+                    span{
+                        font-size: 16px;
+                    }
                 }
             }      
-        }
+        }     
         .List:hover{
             .Dropdown{
-                display: flex;
-                flex-direction: column;
-
+                display: block;
             }
         }
-    
-        
     }
-
     .UserProfile{
         background-color: rgb(58, 58, 58);
         width: 100%;
@@ -185,7 +171,6 @@
             }
         }
     }
-
     .UserProfile:hover{
         .row-down{
             display: none;
@@ -193,117 +178,58 @@
         .row-up,.UserMenu{
             display: block;
         }
-
     }
 }
 
+.Lists::-webkit-scrollbar {
+    width: 12px; /* Width of the entire scrollbar */
+}
+.Lists::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the track */
+}
+.Lists::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the handle */
+    border-radius: 10px; /* Roundness of the handle */
+    border: 3px solid #f1f1f1; /* Padding around handle */
+}
+.Lists::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle color on hover */
+}
 
-/*---------------------- MOBILE VERSION----------------------*/
+/*----------------------MOBILE DEVICES----------------------*/
 @media screen and (max-width: 768px){
-    
-    .Sidebar{
+    .Sidebar-Content{
         .Company{
             a{
-                .Company-Content{
-                    svg{
-
-                    }
-                    span{
-                        display: none;
-                    }
+                span{
+                    display: none;
                 }
             }
-            a:hover{
-            }
         }
-    
         .Lists{
             .List{
-                width: fit-content;
                 a{
-                    .List-Content{
-                        span{
-                            display: none;
-                        }
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 20px 0;
+                    span{
+                        display: none;
                     }
                     .List-Row{
                         display: none;
                     }
                 }
-        
-                a:hover{
-
-                }
-                a.active{
-
-                }
-
-                .Dropdown{
-                    a{    
-                    }
-                }      
-            }
-            .List:hover{
-                .Dropdown{
-                    display: flex;
-                    flex-direction: column;
-
-                }
-            }
-    
-        
-        }
-    
-        .UserProfile{
-            .Profile{
-                }
-    
-                .row-up{
-                }
-
-                .UserMenu{
-                    .UserMenu__dropdown{
-
-                        hr{
-                        }
-                        a{
-                        }
-
-                        a:hover{
-                        }
-
-                        a:last-child{
-
-                        }
-                        a:last-child:hover{
-                        }
-                    }
-                }
             }
         }
-    
-        .UserProfile:hover{
-            .row-down{
-            }
-            .row-up,.UserMenu{
-            }
-
     }
 }
-
-
-
-/* ----------- TABLET DEVICES----------- */
+/*----------------------TABLET DEVICES----------------------*/
 @media only screen and (max-width: 768px ) and (max-width:1023px){
-
 }
-
-/* ----------- LAPTOP DEVICES----------- */
+/*----------------------LAPTOP DEVICES----------------------*/
 @media only screen and (max-width: 1024px ) and (max-width:1439px){
-
 }
-
-/* ----------- DESCKTOP DEVICES----------- */
+/*----------------------DESCKTOP DEVICES----------------------*/
 @media only screen and(max-width: 1440px ){
-
 }

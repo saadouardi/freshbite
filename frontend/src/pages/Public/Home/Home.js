@@ -11,14 +11,14 @@ import { Blogs } from '../../../sections/Public/Blogs/Blogs';
 import { NewsLetter } from '../../../sections/Public/NewsLetter/NewsLetter';
 import { Gallery } from '../../../sections/Public/Gallery/Gallery';
 import { Book } from '../../../sections/Public/Book/Book';
-import ProductSlider from '../../../components/Public/Slider/Slider';
+import { Slider } from '../../../components/Public/Slider/Slider';
 
 const Home = () => {
     return (
         <>
-            <Header/>
             <main>
-                {/* <ProductSlider/> */}
+                <Header/>
+                <Slider/>
                 <Products/>
                 <Categories/>
                 <Stats/>
