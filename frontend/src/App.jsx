@@ -37,7 +37,7 @@ import Contact from './pages/Public/Contact/Contact';
 function App() {
   return (
     <>
-        <Router>
+        <Router basename="/freshbite">
           <Switch>
               <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
