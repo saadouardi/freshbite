@@ -1,8 +1,6 @@
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { HashRouter as Router, Routes, Route, Switch } from "react-router-dom";
+// import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import UserProvider from './components/Authentication/UserContext/UserProvider';
-import ProtectedRoute from './components/Authentication/ProtectedRoute/ProtectedRoute';
 import Login from './pages/Authentication/Login/Login';
 import Signup from './pages/Authentication/Signup/Signup';
 import Profile from './pages/Member/Profile/Profile';
@@ -43,6 +41,7 @@ function App() {
           <Switch>
               <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
+
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/dashboard/statistic" component={Statistics} />
               <Route path="/products" component={Products} />
@@ -60,6 +59,7 @@ function App() {
               <Route path="/edit-user" component={EditContact} />
               <Route path="/stock" component={Stock} />
               <Route path="/dashboard-settings" component={DashboardSetting} />
+
               <Route path="/" exact component={Home}/>
               <Route path="/about" component={About}/>
               <Route path="/menu/:filter?" exact component={ProductList}/>
@@ -71,6 +71,13 @@ function App() {
               <Route path="/gallery" exact component={GalleryPage}/>
               <Route path="/blog" exact component={Blog}/>
               <Route path="/contact" exact component={Contact}/>
+              <Route path="/support" exact component={Contact}/>
+
+              <Route path="/profile" exact component={Profile}/>
+              <Route path="/orders" exact component={Profile}/>
+              <Route path="/wishlist" exact component={Profile}/>
+              <Route path="/notifications" exact component={Profile}/>
+              <Route path="/settings" exact component={Profile}/>
               <Route path="/profile" exact component={Profile}/>
         </Switch>
       </Router>

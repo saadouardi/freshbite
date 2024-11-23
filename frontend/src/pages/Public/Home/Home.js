@@ -27,8 +27,8 @@ const Home = () => {
                 <Promotion/>
                 <Blogs/>
                 <NewsLetter/>
-                {/* <Gallery/> */}
-                {/* <Book/> */}
+                <Gallery/>
+                <Book/>
             </main>
             <Footer/>
         </>

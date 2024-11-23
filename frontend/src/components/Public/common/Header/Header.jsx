@@ -67,6 +67,12 @@ export const Header = () => {
                                 <li>
                                     <button className='login'>Log in</button>
                                     <button className='signup'>Sign up</button>
+                                    <a href="/dashboard">
+                                        <button className='login'>Admin</button>
+                                    </a>
+                                    <a href="/profile">
+                                        <button className='signup'>Member</button>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

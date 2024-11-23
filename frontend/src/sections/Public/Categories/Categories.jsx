@@ -18,22 +18,22 @@ export const Categories = () => {
                 <div className='Flex-Center Flex-Column'>
                     <div className='Flex-Center'>
                         <div className='Flex-Center'>
-                            <Category Image={Beef} Text='Burgers'/>
-                            <Category Image={ChickenWings} Text='Chicken Wings'/>
+                            <Category Image={Beef} Text='Burgers' Link='/menu/burgers'/>
+                            <Category Image={ChickenWings} Text='Chicken Wings' Link='/menu/chicken'/>
                         </div>
                         <div className='Flex-Center'>
-                            <Category Image={Pasta} Text='Pasta'/>
-                            <Category Image={Pizza} Text='Pizzas'/>
+                            <Category Image={Pasta} Text='Pasta' Link='/menu/pastas'/>
+                            <Category Image={Pizza} Text='Pizzas' Link='/menu/pizzas'/>
                         </div>
                     </div>
                     <div className='Flex-Center'>
                         <div className='Flex-Center'>
-                            <Category Image={Sandwish} Text='Sandwish'/>
-                            <Category Image={Salads} Text='Salads'/>
+                            <Category Image={Sandwish} Text='Sandwish' Link='/menu/sandwish'/>
+                            <Category Image={Salads} Text='Salads' Link='/menu/salads'/>
                         </div>
                         <div className='Flex-Center'>
-                        <Category Image={Beef} Text='Burgers'/>
-                        <Category Image={ChickenWings} Text='Chicken Wings'/>
+                        <Category Image={Beef} Text='Burgers' Link='/menu/all'/>
+                        <Category Image={ChickenWings} Text='Chicken Wings' Link='/menu/drinks'/>
                         </div>
                     </div>
                 </div>

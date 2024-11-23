@@ -84,9 +84,10 @@ header {
                         border-radius: 100px;
                         padding: 8px;
                         position: relative;
+                        background-color: var(--main-bg);
                         
                         button{
-                            background-color: red !important;
+                            background-color: rgb(236, 0, 0) !important;
                             height: 25px;
                             width: 25px;
                             padding: 5px !important;
