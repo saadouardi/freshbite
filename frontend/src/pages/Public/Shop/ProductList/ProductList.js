@@ -15,10 +15,7 @@ const ProductList = () => {
     const { filter: urlFilter } = useParams();
     const [product, setProduct] = useState([]);
     const [filter, setFilter] = useState('all');
-
-    const isActive = (path) => {
-        return location.pathname === `/menu/${path}`;
-    };
+    const isActive = (path) => location.pathname === path;
 
     const menusTypes = products.reduce((acc, menu) => {
         if (!acc.some(item => item.type === menu.type)){
@@ -72,13 +69,27 @@ const ProductList = () => {
                 <div className='menu-container flex-center-center'>
                     <div className='product-filter'>
                         <div className='product-filter-container flex-center-center Flex-Column'>
-                            <div title='All' className='filter-container flex-center-center' onClick={() => handleFilter('all')}>
+                            <div title='All' 
+                                className={`
+                                    filter-container 
+                                    flex-center-center
+                                    ${isActive(`/menu/all`) ? 'active' : ''}
+                                `} 
+                                onClick={() => handleFilter('all')}>
                                 <img src={Food} alt='' />
                                 <p>All</p>
                             </div>
-                            {menusTypes.map((menu, index) =>{
+                            {menusTypes.map((menu, index) => {
                                 return (
-                                    <div className={`filter-container flex-center-center ${isActive({active}) ? 'active' : ''}`} key={index} onClick={() => { handleFilter(menu.type);}}>
+                                    <div 
+                                        className={`
+                                            filter-container 
+                                            flex-center-center 
+                                            ${isActive(`/menu/${menu.type}`) ? 'active' : ''}
+                                        `} 
+                                        key={index} 
+                                        onClick={() => { handleFilter(menu.type)}}
+                                    >
                                         <img src={menu.image} alt={menu.type} />
                                         <p>{menu.type}</p>
                                     </div>

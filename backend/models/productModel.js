@@ -1,0 +1,21 @@
+const db = require("../config/db");
+
+const Product = {
+    getAll: (callback) => {
+        db.query(
+            "SELECT products.*, categories.name AS category_name FROM products LEFT JOIN categories ON products.category_id = categories.id",
+            callback
+        );
+    },
+    create: (data, callback) => {
+        db.query("INSERT INTO products SET ?", data, callback);
+    },
+    update: (id, data, callback) => {
+        db.query("UPDATE products SET ? WHERE id = ?", [data, id], callback);
+    },
+    delete: (id, callback) => {
+        db.query("DELETE FROM products WHERE id = ?", [id], callback);
+    },
+};
+
+module.exports = Product;

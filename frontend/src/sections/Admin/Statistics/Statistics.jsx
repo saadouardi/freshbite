@@ -21,6 +21,7 @@ export const Statistics = () => {
     const [productCount, setProductCount] = useState('--');
     const [ordersCount, setOrdersCount] = useState('--');
     const [revenuesCount, setRevenuesCount] = useState('--');
+    
     useEffect(() => {
         fetch('http://localhost:5000/api/users/count')
         .then(response => {
@@ -37,6 +38,7 @@ export const Statistics = () => {
             setUserCount('Error');
         });
     }, []);
+
     useEffect(() => {
         fetch('http://localhost:5000/api/products/count')
         .then(response => {
@@ -53,6 +55,7 @@ export const Statistics = () => {
             setProductCount('Error');
         });
     }, []);
+
     useEffect(() => {
         fetch('http://localhost:5000/api/orders/count')
         .then(response => {
@@ -69,6 +72,7 @@ export const Statistics = () => {
             setOrdersCount('Error');
         });
     }, []);
+
     useEffect(() => {
         fetch('http://localhost:5000/api/revenues/count')
         .then(response => {

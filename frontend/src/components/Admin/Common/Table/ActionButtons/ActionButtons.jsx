@@ -14,7 +14,7 @@ export const Update = ({link,id}) => {
 
 
 export const Delete = ({id,ItemImage,ItemName}) => {
-    const [Delete,setDelete] = useState(false)
+    const [Delete, setDelete] = useState(false)
     const handleDelete = () =>{
         setDelete(!Delete);
         console.log(`delete item with id ${id}`)

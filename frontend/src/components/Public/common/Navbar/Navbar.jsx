@@ -5,6 +5,7 @@ import './Navbar.scss';
 export const Navbar = () => {
     const location = useLocation();
     const isActive = (path) => location.pathname === path;
+    console.log(isActive);
 
     return (
         <>

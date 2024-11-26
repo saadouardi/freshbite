@@ -12,9 +12,9 @@ const Dashboard = () => {
       <main className='admin'>
         <Header/>
         <div className='Flex-Center'>
-          <div className=''>
             <Statistics/>
-          </div>
+            <Statistics/>
+            <Statistics/>
         </div>
       </main>
     </div>

@@ -4,6 +4,7 @@
     align-items: start !important;
     .active{
         background-color: var(--main-hover);
+        color: black !important;
     }
     .product-filter{
         background-color: transparent;
@@ -21,14 +22,11 @@
             cursor: pointer;
             transition: all 0.3s linear;
             p{
-                color: orange;
+                color: white;
             }
         }
         .filter-container:hover{
             background-color: var(--main-hover);
-            p {
-                color: black;
-            }
         }
     }
     .product-search-sort-list{

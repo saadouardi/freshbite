@@ -1,16 +1,16 @@
 .admin-page{
     display: flex;
+    section {
+        width: 100%;
+    }
 }
 aside.admin{
-    background-color: rgb(63, 91, 152);
-    height: 100vh;
-    width: clamp(20%, 300px, 20%);
+    background-color: black;
 }
 main.admin{
-    background-color: rgb(217, 217, 217);
+    flex: 1;
+    background-color: #333;
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: 0;
-    gap: 0;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect, useReducer, useRef} from 'react';
 import { Header } from '../../../components/Public/common/Header/Header';
 import { Footer } from '../../../components/Public/common/Footer/Footer';
 import { Products } from '../../../sections/Public/Shop/Products/Products';
@@ -17,6 +17,7 @@ const Home = () => {
     return (
         <>
             <main>
+                    
                 <Header/>
                 <Slider/>
                 <Products/>
