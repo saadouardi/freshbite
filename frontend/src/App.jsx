@@ -1,5 +1,4 @@
-// import { HashRouter as Router, Route, Switch } from "react-router-dom";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 
 import Login from './pages/Authentication/Login/Login';
 import Signup from './pages/Authentication/Signup/Signup';
