@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/freshbite/static/css/main.45ae047b.css",
-    "main.js": "/freshbite/static/js/main.7d79130d.js",
+    "main.css": "/freshbite/static/css/main.9b977785.css",
+    "main.js": "/freshbite/static/js/main.9c29056c.js",
     "static/js/453.d855a71b.chunk.js": "/freshbite/static/js/453.d855a71b.chunk.js",
     "static/media/TomatoSauceSpaghetti.webp": "/freshbite/static/media/TomatoSauceSpaghetti.f7286ff026bb4a2e7b20.webp",
     "static/media/slider-2.png": "/freshbite/static/media/slider-2.f5626394de9aef80e5ee.png",
@@ -67,12 +67,12 @@
     "static/media/bg-s1.jpg": "/freshbite/static/media/bg-s1.45113ab99c8bb451b7ff.jpg",
     "static/media/default.webp": "/freshbite/static/media/default.cba7943bb1f7825fd563.webp",
     "index.html": "/freshbite/index.html",
-    "main.45ae047b.css.map": "/freshbite/static/css/main.45ae047b.css.map",
-    "main.7d79130d.js.map": "/freshbite/static/js/main.7d79130d.js.map",
+    "main.9b977785.css.map": "/freshbite/static/css/main.9b977785.css.map",
+    "main.9c29056c.js.map": "/freshbite/static/js/main.9c29056c.js.map",
     "453.d855a71b.chunk.js.map": "/freshbite/static/js/453.d855a71b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.45ae047b.css",
-    "static/js/main.7d79130d.js"
+    "static/css/main.9b977785.css",
+    "static/js/main.9c29056c.js"
   ]
 }
