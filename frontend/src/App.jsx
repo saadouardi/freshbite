@@ -1,9 +1,7 @@
-import { HashRouter as Router, Route, Switch } from "react-router-dom";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Login from './pages/Authentication/Login/Login';
 import Signup from './pages/Authentication/Signup/Signup';
 import Profile from './pages/Member/Profile/Profile';
-
 import Dashboard from './pages/Admin/Dashboard/Dashboard';
 import Stock from './pages/Admin/Orders/Orders';
 import Statistics from './pages/Admin/Orders/Orders';
@@ -20,7 +18,6 @@ import Blogs from './pages/Admin/Orders/Orders';
 import AddBlog from './pages/Admin/Orders/Orders';
 import EditBlog from './pages/Admin/Orders/Orders';
 import DashboardSetting from './pages/Admin/Orders/Orders';
-
 import Home from './pages/Public/Home/Home';
 import About from './pages/Public/About/About';
 import ProductList from './pages/Public/Shop/ProductList/ProductList';
@@ -40,7 +37,6 @@ function App() {
           <Switch>
               <Route path="/login" component={Login} />
               <Route path="/signup" component={Signup} />
-
               <Route path="/dashboard" component={Dashboard} />
               <Route path="/dashboard/statistic" component={Statistics} />
               <Route path="/products" component={Products} />
@@ -58,7 +54,6 @@ function App() {
               <Route path="/edit-user" component={EditContact} />
               <Route path="/stock" component={Stock} />
               <Route path="/dashboard-settings" component={DashboardSetting} />
-
               <Route path="/" exact component={Home}/>
               <Route path="/about" component={About}/>
               <Route path="/menu/:filter?" exact component={ProductList}/>
@@ -71,7 +66,6 @@ function App() {
               <Route path="/blog" exact component={Blog}/>
               <Route path="/contact" exact component={Contact}/>
               <Route path="/support" exact component={Contact}/>
-
               <Route path="/profile" exact component={Profile}/>
               <Route path="/orders" exact component={Profile}/>
               <Route path="/wishlist" exact component={Profile}/>

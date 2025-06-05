@@ -12,7 +12,7 @@
 [https://demo.templatemonster.com/demo/269249.html](foodingly)
 [https://foreverbuy.in/](public-admin)
 [https://preview.themeforest.net/item/costic-restaurant-dashboard-react-template/full_screen_preview/28350834](admin)
-[[https://l8eb.com/%D9%82%D8%B3%D9%85-%D9%81%D9%8A%D9%81%D8%A7-25/c832854014]]
+[https://l8eb.com/%D9%82%D8%B3%D9%85-%D9%81%D9%8A%D9%81%D8%A7-25/c832854014]
 
 ## Great Ideas
 
@@ -22,6 +22,7 @@
 
 ### Product details
 
+[https://www.fab.com/listings/880e319a-a59e-4ed2-b268-b32dac7fa016]
 [https://shop.kick.com/products/kick-pillow?pr_prod_strat=jac&pr_rec_id=35988d6f8&pr_rec_pid=9735253655826&pr_ref_pid=9735253524754&pr_seq=uniform]
 
 ### Checkout Payment
